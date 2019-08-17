@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sean Kelly</title>
+    <link>https://spkelly.com/</link>
+    <description>Recent content on Sean Kelly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://spkelly.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RTL-SDR</title>
+      <link>https://spkelly.com/posts/rtlsdr/</link>
+      <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/rtlsdr/</guid>
+      <description>SDR (Software defined radio) is a technology that shrinks all of the amplifiers/mixers/components of a radio system into a tiny USB dongle and some computer software.
+This is the kit I bought for $30: https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Telescopic
+Then I installed some free software SDR# which allows you to tune filters and gain and install plugins.
+First up, I wanted to try and capture data from a NOAA satellite as it passed overhead. These satellites are constantly transmitting data/images at 137Mhz and when in range, this data can easily be received and decoded.</description>
+    </item>
+    
+    <item>
+      <title>Battery Reconditioning</title>
+      <link>https://spkelly.com/posts/batteryreconditioning/</link>
+      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/batteryreconditioning/</guid>
+      <description>Recently I came across a project where someone was using an off the shelf digital multimeter, power supply, and electronic load to recondition hybrid batteries. This involved disassembling the full pack of cells, testing, removing, and replacing bad cells, replacing contacts, etc, before doing multiple charge and discharge cycles to verify the improvement and condition of the battery. To charge, the power supply was turned on while logging with the DMM, to discharge, the eload was used in various modes (constant current, constant power) to quantify the capacity of the cell or pack of cells.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Code VIM Extension</title>
+      <link>https://spkelly.com/posts/vscodevim/</link>
+      <pubDate>Sat, 25 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/vscodevim/</guid>
+      <description>Microsoft came out with an open source text editor called Visual Studio Code . The cool thing about this program was that it was cross-platform so I could move seamlessly between MacOS, Ubuntu, and Windows 10 and always be using the same editor, extensions, and environment.
+I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin. The extension was written in TypeScript but I decided to start contributing some bug fixes for issues that annoyed ME and figured I would learn typescript along the way.</description>
+    </item>
+    
+    <item>
+      <title>Smoker Temperature Controller</title>
+      <link>https://spkelly.com/posts/smokercontroller/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/smokercontroller/</guid>
+      <description>https://github.com/xconverge/SmokerController
+I wanted a smoker so I chose the Weber Smokey Mountain! I got the 22″ version so that I can load it with a few racks of ribs with no issues.
+This smoker uses charcoal as the heat source. Out of the box, you control the burn rate using vents on the bottom of the unit, with properly spread and lit charcoal, you can sustain 230 degrees for 7 or 8 hours with no problems before needing to add more fuel.</description>
+    </item>
+    
+    <item>
+      <title>Drawing Robot</title>
+      <link>https://spkelly.com/posts/drawingrobot/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/drawingrobot/</guid>
+      <description>This was a quick Friday afternoon project that turned into a demo of precise machine control for dispensing applications.
+I wrote a GCode interpreter in C# that convertes gcode to V+ which was used to control the Adept robot with the marker on the end. GCode is a language commonly used in machining and CNC primarily.
+I then used a python based image to GCode library to convert images to GCode paths.</description>
+    </item>
+    
+    <item>
+      <title>Delta Robot</title>
+      <link>https://spkelly.com/posts/deltarobot/</link>
+      <pubDate>Tue, 13 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/deltarobot/</guid>
+      <description>My friend Vince and I wanted to put my new 3D printer (see previous post) to good use!
+We decided to design and build a delta style pick and place robot from scratch.
+Vince started with the CAD. A large majority of this project was done on the train to/from work. We decided on threaded rod for the parallel links, and some u-joints from McMaster-Carr for to give us some of the motion we needed.</description>
+    </item>
+    
+    <item>
+      <title>3D Printer Prusa i3</title>
+      <link>https://spkelly.com/posts/3dprinter/</link>
+      <pubDate>Mon, 15 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/3dprinter/</guid>
+      <description>I chose the Prusa i3 (http://reprap.org/wiki/Prusa_i3) as the 3D printer I wanted to build due to it’s rigidity and amount of information online related to it. At the time of making this, 3D printing was starting to get popular but was not NEARLY as popular as it is as you read this. Kits were not as available, amazon did not sell 3D printers, so I decided to make my own from plans and forum posts found online.</description>
+    </item>
+    
+    <item>
+      <title>MobileEyes iOS App</title>
+      <link>https://spkelly.com/posts/mobileeyes/</link>
+      <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/mobileeyes/</guid>
+      <description>I developed this iOS application to control an Adept mobile robot platform in my free time.
+90% of this was done in hotels and airplanes while travelling for work.
+I was able to VPN to work from a Southwest plane, and connect to a mobile robot and send it to different parts of the building using XCode from 40,000 feet.
+Once I submitted the application to the Apple app store, they asked me to send them a video of the application working before they would approve it.</description>
+    </item>
+    
+    <item>
+      <title>Word Clock</title>
+      <link>https://spkelly.com/posts/wordclock/</link>
+      <pubDate>Sun, 24 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/wordclock/</guid>
+      <description>This was a rushed project that actually turned out pretty well from the outside! It was based mostly on this instructable as the inspiration and reference
+First I went to office max and had 3 or 4 transparencies printed out with the pattern I wanted for the front. I wanted multiple copies so that when I put them all on top of eachother, the darkened black sections were truly opaque.</description>
+    </item>
+    
+    <item>
+      <title>Kegerator</title>
+      <link>https://spkelly.com/posts/kegerator/</link>
+      <pubDate>Sun, 18 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/kegerator/</guid>
+      <description>As I started home brewing more, I wanted to avoid the pain of bottling the entire batch of fermented beer. I decided to convert a fridge to a kegerator.
+I bought the fridge new at Lowes for $200. Immediately upon bringing it home, I removed the “freezer” section (just a shelf on this particular fridge). Some mini fridges have cooling elements in this shelf. If there are cooling elements in the shelf, you have to SLOWLY bend the shelf out of the way and hope that you don’t puncture any of the cooling elements.</description>
+    </item>
+    
+  </channel>
+</rss>
