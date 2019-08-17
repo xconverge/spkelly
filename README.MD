@@ -29,7 +29,7 @@ hugo
 
 Will generate compiled version of site into docs/. Then Git add, commit, and push compiled changes.
 
-To clean the docs directory without removing necessary files (docs/CNAME needs to stay but is in .gitignore):
+To clean the docs directory without removing necessary files (docs/CNAME needs to stay but can be protected if you copy pre-commit into the .git/hooks folder):
 
 ```
 rm -rf docs/*

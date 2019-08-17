@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Make sure docs/CNAME is not changed
+SRC_PATTERN="docs/CNAME"
+if git diff --cached --name-only | grep --quiet "$SRC_PATTERN"
+then 
+  echo "Do not change docs/CNAME!"
+  exit 1
+fi
