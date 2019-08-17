@@ -62,7 +62,7 @@ First print is a 20mm x 20mm x 10mm square so that I can verify calibration.
 ![](/reprap/reprap13.jpg)
 ![](/reprap/reprap17.jpg)
 
-I had to change a lot of parameters in the firmware I am using to intrepret the GCode. The firmware I am using is Marlin (https://github.com/MarlinFirmware/Marlin)
+I had to change a lot of parameters in the firmware I am using to interpret the GCode. The firmware I am using is Marlin (https://github.com/MarlinFirmware/Marlin)
 
 Printing a new herringbone gear for my extruder because the one I have isn’t very clean.
 

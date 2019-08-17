@@ -41,7 +41,7 @@ Screenshot of the interface
 Here is the blower mechanism I made using a 12v fan and a tomato can.
 
 ![](/smokercontroller/smoker4.jpg)
-
+  
 ![](/smokercontroller/smoker2.jpg)
 
 I used a toggle bolt to be able to temporarily mount the can to the smoker vent.

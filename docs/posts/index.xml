@@ -28,7 +28,7 @@ I considered converting all of the posts to individual HTML pages, with a decent
 
 <p>The second phase of this project was to move hosting to something free. The site is so small (&lt;100Mb) that I figured there had to be somewhere free to host it. I considered AWS free tier, but in the end went with Github Pages. I had seen quite a few .github.io pages in the past and wanted to see how straightforward it was to use for my use case.</p>
 
-<p>I moved all of my sourcecode into a repository (<a href="https://github.com/xconverge/spkelly">https://github.com/xconverge/spkelly</a>), pointed the repo to the docs/ folder and it was then publically available! Easy. Next up was to add a CNAME record and switch to a custom domain name.</p>
+<p>I moved all of my sourcecode into a repository (<a href="https://github.com/xconverge/spkelly">https://github.com/xconverge/spkelly</a>), pointed the repo to the docs/ folder and it was then publicly available! Easy. Next up was to add a CNAME record and switch to a custom domain name.</p>
 
 <p><a href="https://www.spkelly.com">https://www.spkelly.com</a> was now reborn!</p>
 
@@ -312,15 +312,15 @@ This smoker uses charcoal as the heat source. Out of the box, you control the bu
 			
 			<guid>https://spkelly.com/posts/drawingrobot/</guid>
 			<description>This was a quick Friday afternoon project that turned into a demo of precise machine control for dispensing applications.
-I wrote a GCode interpreter in C# that convertes gcode to V+ which was used to control the Adept robot with the marker on the end. GCode is a language commonly used in machining and CNC primarily.
+I wrote a GCode interpreter in C# that converts GCode to V+ which was used to control the Adept robot with the marker on the end. GCode is a language commonly used in machining and CNC primarily.
 I then used a python based image to GCode library to convert images to GCode paths.</description>
 			<content type="html"><![CDATA[<p>This was a quick Friday afternoon project that turned into a demo of precise machine control for dispensing applications.</p>
 
-<p>I wrote a GCode interpreter in C# that convertes gcode to V+ which was used to control the Adept robot with the marker on the end. GCode is a language commonly used in machining and CNC primarily.</p>
+<p>I wrote a GCode interpreter in C# that converts GCode to V+ which was used to control the Adept robot with the marker on the end. GCode is a language commonly used in machining and CNC primarily.</p>
 
 <p>I then used a python based image to GCode library to convert images to GCode paths.</p>
 
-<p>The last step was to run the gcode through my intrepreter and see what comes out the other side…</p>
+<p>The last step was to run the GCode through my interpreter and see what comes out the other side…</p>
 
 <p><img src="/drawingrobot/robot_daftpunk.jpg" alt="" /></p>
 
@@ -436,7 +436,7 @@ Vince started with the CAD. A large majority of this project was done on the tra
 <p><img src="/reprap/reprap13.jpg" alt="" />
 <img src="/reprap/reprap17.jpg" alt="" /></p>
 
-<p>I had to change a lot of parameters in the firmware I am using to intrepret the GCode. The firmware I am using is Marlin (<a href="https://github.com/MarlinFirmware/Marlin">https://github.com/MarlinFirmware/Marlin</a>)</p>
+<p>I had to change a lot of parameters in the firmware I am using to interpret the GCode. The firmware I am using is Marlin (<a href="https://github.com/MarlinFirmware/Marlin">https://github.com/MarlinFirmware/Marlin</a>)</p>
 
 <p>Printing a new herringbone gear for my extruder because the one I have isn’t very clean.</p>
 
@@ -498,10 +498,10 @@ Once I submitted the application to the Apple app store, they asked me to send t
 			
 			<guid>https://spkelly.com/posts/wordclock/</guid>
 			<description>This was a rushed project that actually turned out pretty well from the outside! It was based mostly on this instructable as the inspiration and reference
-First I went to office max and had 3 or 4 transparencies printed out with the pattern I wanted for the front. I wanted multiple copies so that when I put them all on top of eachother, the darkened black sections were truly opaque.</description>
+First I went to office max and had 3 or 4 transparencies printed out with the pattern I wanted for the front. I wanted multiple copies so that when I put them all on top of each other, the darkened black sections were truly opaque.</description>
 			<content type="html"><![CDATA[<p>This was a rushed project that actually turned out pretty well from the outside! It was based mostly on this instructable as the inspiration and reference</p>
 
-<p>First I went to office max and had 3 or 4 transparencies printed out with the pattern I wanted for the front. I wanted multiple copies so that when I put them all on top of eachother, the darkened black sections were truly opaque.</p>
+<p>First I went to office max and had 3 or 4 transparencies printed out with the pattern I wanted for the front. I wanted multiple copies so that when I put them all on top of each other, the darkened black sections were truly opaque.</p>
 
 <p><img src="/wordclock/wordclock1.jpg" alt="" /></p>
 

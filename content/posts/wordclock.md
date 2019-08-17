@@ -8,7 +8,7 @@ tags:
 
 This was a rushed project that actually turned out pretty well from the outside! It was based mostly on this instructable as the inspiration and reference
 
-First I went to office max and had 3 or 4 transparencies printed out with the pattern I wanted for the front. I wanted multiple copies so that when I put them all on top of eachother, the darkened black sections were truly opaque.
+First I went to office max and had 3 or 4 transparencies printed out with the pattern I wanted for the front. I wanted multiple copies so that when I put them all on top of each other, the darkened black sections were truly opaque.
 
 ![](/wordclock/wordclock1.jpg)
 
