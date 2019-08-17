@@ -12,6 +12,8 @@ Since 100% of the content is static, wordpress was overkill. For my use case, it
 
 I considered converting all of the posts to individual HTML pages, with a decent index.html and some minor css. Upon investigating some of the latest frameworks (jekyll, hugo, react, etc) I decided on hugo which is written in Go https://gohugo.io/.
 
+![](/websiteupdate/hugo.png)
+
 I chose this primarily for it's simplicity and speed for a static site. Building the site went pretty quickly, now all of my posts/projects are each a single markdown file, and adding a new project is as simple as adding a new markdown file.
 
 The second phase of this project was to move hosting to something free. The site is so small (<100Mb) that I figured there had to be somewhere free to host it. I considered AWS free tier, but in the end went with Github Pages. I had seen quite a few .github.io pages in the past and wanted to see how straightforward it was to use for my use case.
