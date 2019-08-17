@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://spkelly.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Website Update</title>
+      <link>https://spkelly.com/posts/websiteupdate/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/websiteupdate/</guid>
+      <description>Prior to this post, I had been hosting this website on a home server for a few years. It was originally just a project log using wordpress, without too much thought into how I would manage it.
+Since 100% of the content is static, wordpress was overkill. For my use case, it was overcomplicated, slow-ish, and a potential security headache.
+I considered converting all of the posts to individual HTML pages, with a decent index.</description>
+    </item>
     
     <item>
       <title>RTL-SDR</title>
@@ -105,16 +116,6 @@ Once I submitted the application to the Apple app store, they asked me to send t
       <guid>https://spkelly.com/posts/wordclock/</guid>
       <description>This was a rushed project that actually turned out pretty well from the outside! It was based mostly on this instructable as the inspiration and reference
 First I went to office max and had 3 or 4 transparencies printed out with the pattern I wanted for the front. I wanted multiple copies so that when I put them all on top of eachother, the darkened black sections were truly opaque.</description>
-    </item>
-    
-    <item>
-      <title>Kegerator</title>
-      <link>https://spkelly.com/posts/kegerator/</link>
-      <pubDate>Sun, 18 Sep 2011 00:00:00 +0000</pubDate>
-      
-      <guid>https://spkelly.com/posts/kegerator/</guid>
-      <description>As I started home brewing more, I wanted to avoid the pain of bottling the entire batch of fermented beer. I decided to convert a fridge to a kegerator.
-I bought the fridge new at Lowes for $200. Immediately upon bringing it home, I removed the “freezer” section (just a shelf on this particular fridge). Some mini fridges have cooling elements in this shelf. If there are cooling elements in the shelf, you have to SLOWLY bend the shelf out of the way and hope that you don’t puncture any of the cooling elements.</description>
     </item>
     
   </channel>
