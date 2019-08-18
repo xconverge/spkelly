@@ -14,7 +14,7 @@ First up I needed a light source, for this I used a 400 watt metal halide bulb. 
 
 ![](/projector/projector_3.jpg)
 
-The first iteration of the enclosure and projection lens focusing mechanism was not pretty but it worked. The stain looks silly…
+The first iteration of the enclosure and projection lens focusing mechanism was not pretty but it worked. The stain looks silly...
 
 ![](/projector/projector_5.jpg)
 

@@ -12,12 +12,12 @@ I wrote a GCode interpreter in C# that converts GCode to V+ which was used to co
 
 I then used a python based image to GCode library to convert images to GCode paths.
 
-The last step was to run the GCode through my interpreter and see what comes out the other side…
+The last step was to run the GCode through my interpreter and see what comes out the other side...
 
 ![](/drawingrobot/robot_daftpunk.jpg)
 
 A bit abstract but not bad for a first run, after some tweaks to the python script for thresholds and edge finding I got some crisper results.
 
-A few different drawings…
+A few different drawings...
 
 ![](/drawingrobot/robot_portrait.jpg)

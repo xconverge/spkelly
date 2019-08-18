@@ -17,7 +17,7 @@ Printed parts from someone elses printer on ebay to make my printer arrived!
 
 ![](/reprap/reprap2.jpg)
 
-Time to get started…
+Time to get started...
 
 ![](/reprap/reprap3.jpg)
 
@@ -68,7 +68,7 @@ Printing a new herringbone gear for my extruder because the one I have isn’t v
 
 ![](/reprap/reprap14.jpg)
 
-Minion…because…minion.
+Minion...because...minion.
 
 ![](/reprap/reprap15.jpg)
 ![](/reprap/reprap18.jpg)

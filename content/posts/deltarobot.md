@@ -10,7 +10,7 @@ My friend Vince and I wanted to put my new 3D printer (see previous post) to goo
 
 We decided to design and build a delta style pick and place robot from scratch.
 
-Vince started with the CAD. A large majority of this project was done on the train to/from work. We decided on threaded rod for the parallel links, and some u-joints from McMaster-Carr for to give us some of the motion we needed. Once he finished up the CAD, we ordered parts and got to work printing…
+Vince started with the CAD. A large majority of this project was done on the train to/from work. We decided on threaded rod for the parallel links, and some u-joints from McMaster-Carr for to give us some of the motion we needed. Once he finished up the CAD, we ordered parts and got to work printing...
 
 ![](/deltarobot/delta3.jpg)
 

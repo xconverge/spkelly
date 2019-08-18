@@ -18,4 +18,4 @@ Next thing I know I was one of the core maintainers of the extension and was con
 
 At the time of writing this, I have 172 commits to the extensions repository. The group of developers working on this is interesting, it is mostly the main developer, a few Microsoft employees from the visual studio code team, and myself, although the plugin has had many many contributors in the past. It is cool to see Microsoft invested in helping develop plugins to further the adoption of their open source software.
 
-I continue to contribute to the extension weekly, and somehow managed to really really like typescript in the end…
+I continue to contribute to the extension weekly, and somehow managed to really really like typescript in the end...

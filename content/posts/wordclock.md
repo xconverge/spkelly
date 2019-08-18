@@ -18,11 +18,11 @@ I finished wiring up the circuit, the shift registers, etc before moving on to t
 
 ![](/wordclock/wordclock2.jpg)
 
-Not exactly kosher protoboard usage but it will work for this…
+Not exactly kosher protoboard usage but it will work for this...
 
 ![](/wordclock/wordclock3.jpg)
 
-I created some baffles from some cardboard I had laying around….and started to feed in the led strips for each section.
+I created some baffles from some cardboard I had laying around....and started to feed in the led strips for each section.
 
 Once all of the hardware was in place, I modified some of the existing code to match the pinouts that I was using and was good to go!
 
