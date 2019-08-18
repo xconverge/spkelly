@@ -47,14 +47,15 @@ I considered converting all of the posts to individual HTML pages, with a decent
 			
 			<guid>https://spkelly.com/posts/rtlsdr/</guid>
 			<description>SDR (Software defined radio) is a technology that shrinks all of the amplifiers/mixers/components of a radio system into a tiny USB dongle and some computer software.
-This is the kit I bought for $30: https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Telescopic
+This is the kit I bought for $30: Amazon link
 Then I installed some free software SDR# which allows you to tune filters and gain and install plugins.
-First up, I wanted to try and capture data from a NOAA satellite as it passed overhead. These satellites are constantly transmitting data/images at 137Mhz and when in range, this data can easily be received and decoded.</description>
+First up, I wanted to try and capture data from a NOAA satellite as it passed overhead.</description>
 			<content type="html"><![CDATA[<p>SDR (Software defined radio) is a technology that shrinks all of the amplifiers/mixers/components of a radio system into a tiny USB dongle and some computer software.</p>
 
 <p>This is the kit I bought for $30:
-<img src="/rtlsdr/rtlsdrkit.jpg" alt="" />
-<a href="https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Telescopic">https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Telescopic</a></p>
+<img src="/rtlsdr/rtlsdrkit.jpg" alt="" /></p>
+
+<p><a href="https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B011HVUEME/">Amazon link</a></p>
 
 <p>Then I installed some free software SDR# which allows you to tune filters and gain and install plugins.</p>
 

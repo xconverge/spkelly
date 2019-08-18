@@ -10,7 +10,8 @@ SDR (Software defined radio) is a technology that shrinks all of the amplifiers/
 
 This is the kit I bought for $30:
 ![](/rtlsdr/rtlsdrkit.jpg)
-https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Telescopic
+  
+[Amazon link](https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B011HVUEME/)
 
 Then I installed some free software SDR# which allows you to tune filters and gain and install plugins.
 
