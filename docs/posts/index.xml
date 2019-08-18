@@ -131,11 +131,11 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 
 <p>The checksum was simply the sum of the previous 25 bytes. I created another Qt widget for the eload, added some controls, added a communication thread to handle the serial communication and implementation of this protocol, and now had control of the electronic load!</p>
 
-<p>The power supply communication proved to be a bit trickier due to the translated documentation…</p>
+<p>The power supply communication proved to be a bit trickier due to the translated documentation&hellip;</p>
 
 <p><img src="/batterycharging/psupacket.png" alt="" /></p>
 
-<p>Hmm…so it looks like there is a mandatory silent period before and after the packet. The packet then has a dynamic size based on the type of command being sent. Finally a 16bit crc is done on the data. Again using the packet sniffer I sent some commands using the existing software (all in chinese) and reverse engineered the commands for my purpose. I was able to create dummy packets in a unit test with the same contents from my serial sniffing tests to verify my crc algorithm was outputting the same results. With some experimentation I figured out how the voltage always had a x100 multiplier on the value and the current had a x10 multiplier, this allowed 2 bytes to represent relatively fine currents and voltages. I then created another Qt widget and comm thread to manage the power supply and the new comm protocol.</p>
+<p>Hmm&hellip;so it looks like there is a mandatory silent period before and after the packet. The packet then has a dynamic size based on the type of command being sent. Finally a 16bit crc is done on the data. Again using the packet sniffer I sent some commands using the existing software (all in chinese) and reverse engineered the commands for my purpose. I was able to create dummy packets in a unit test with the same contents from my serial sniffing tests to verify my crc algorithm was outputting the same results. With some experimentation I figured out how the voltage always had a x100 multiplier on the value and the current had a x10 multiplier, this allowed 2 bytes to represent relatively fine currents and voltages. I then created another Qt widget and comm thread to manage the power supply and the new comm protocol.</p>
 
 <p>Once I could control all 3 devices properly, I then added a few minor extras for ease of use:</p>
 
@@ -246,7 +246,7 @@ I started using the VSCodeVim extension to have Vim style keybindings (essential
 
 <p>At the time of writing this, I have 172 commits to the extensions repository. The group of developers working on this is interesting, it is mostly the main developer, a few Microsoft employees from the visual studio code team, and myself, although the plugin has had many many contributors in the past. It is cool to see Microsoft invested in helping develop plugins to further the adoption of their open source software.</p>
 
-<p>I continue to contribute to the extension weekly, and somehow managed to really really like typescript in the end…</p>
+<p>I continue to contribute to the extension weekly, and somehow managed to really really like typescript in the end&hellip;</p>
 ]]></content>
 		</item>
 		
@@ -322,13 +322,13 @@ I then used a python based image to GCode library to convert images to GCode pat
 
 <p>I then used a python based image to GCode library to convert images to GCode paths.</p>
 
-<p>The last step was to run the GCode through my interpreter and see what comes out the other side…</p>
+<p>The last step was to run the GCode through my interpreter and see what comes out the other side&hellip;</p>
 
 <p><img src="/drawingrobot/robot_daftpunk.jpg" alt="" /></p>
 
 <p>A bit abstract but not bad for a first run, after some tweaks to the python script for thresholds and edge finding I got some crisper results.</p>
 
-<p>A few different drawings…</p>
+<p>A few different drawings&hellip;</p>
 
 <p><img src="/drawingrobot/robot_portrait.jpg" alt="" /></p>
 ]]></content>
@@ -347,7 +347,7 @@ Vince started with the CAD. A large majority of this project was done on the tra
 
 <p>We decided to design and build a delta style pick and place robot from scratch.</p>
 
-<p>Vince started with the CAD. A large majority of this project was done on the train to/from work. We decided on threaded rod for the parallel links, and some u-joints from McMaster-Carr for to give us some of the motion we needed. Once he finished up the CAD, we ordered parts and got to work printing…</p>
+<p>Vince started with the CAD. A large majority of this project was done on the train to/from work. We decided on threaded rod for the parallel links, and some u-joints from McMaster-Carr for to give us some of the motion we needed. Once he finished up the CAD, we ordered parts and got to work printing&hellip;</p>
 
 <p><img src="/deltarobot/delta3.jpg" alt="" /></p>
 
@@ -393,7 +393,7 @@ Vince started with the CAD. A large majority of this project was done on the tra
 
 <p><img src="/reprap/reprap2.jpg" alt="" /></p>
 
-<p>Time to get started…</p>
+<p>Time to get started&hellip;</p>
 
 <p><img src="/reprap/reprap3.jpg" alt="" /></p>
 
@@ -444,7 +444,7 @@ Vince started with the CAD. A large majority of this project was done on the tra
 
 <p><img src="/reprap/reprap14.jpg" alt="" /></p>
 
-<p>Minion…because…minion.</p>
+<p>Minion&hellip;because&hellip;minion.</p>
 
 <p><img src="/reprap/reprap15.jpg" alt="" />
 <img src="/reprap/reprap18.jpg" alt="" /></p>
@@ -513,11 +513,11 @@ First I went to office max and had 3 or 4 transparencies printed out with the pa
 
 <p><img src="/wordclock/wordclock2.jpg" alt="" /></p>
 
-<p>Not exactly kosher protoboard usage but it will work for this…</p>
+<p>Not exactly kosher protoboard usage but it will work for this&hellip;</p>
 
 <p><img src="/wordclock/wordclock3.jpg" alt="" /></p>
 
-<p>I created some baffles from some cardboard I had laying around….and started to feed in the led strips for each section.</p>
+<p>I created some baffles from some cardboard I had laying around&hellip;.and started to feed in the led strips for each section.</p>
 
 <p>Once all of the hardware was in place, I modified some of the existing code to match the pinouts that I was using and was good to go!</p>
 
@@ -571,7 +571,7 @@ I worked on the automated assembly of the tank once the parts were already made.
 
 <p>I worked on the automated assembly of the tank once the parts were already made. I also worked a few 3 hours shifts on the injection molding machine to get as many of our parts made as we could throughout the semester.</p>
 
-<p>We had a 6 axis Staubli robot and a 4 axis Adept Cobra robot. I was just a part of a larger team here but I did quite a bit of fixture design, machining, and robot programming to help the automated assembly be a reality. In the end, we assembled a few using the robots, but it was faster to just build them by hand in the last few days of the semester….oops.</p>
+<p>We had a 6 axis Staubli robot and a 4 axis Adept Cobra robot. I was just a part of a larger team here but I did quite a bit of fixture design, machining, and robot programming to help the automated assembly be a reality. In the end, we assembled a few using the robots, but it was faster to just build them by hand in the last few days of the semester&hellip;.oops.</p>
 
 <p><img src="/aml/aml1.jpg" alt="" /></p>
 
@@ -611,13 +611,13 @@ This was essentially a break beam system however since there were multiple types
 
 <p>This was essentially a break beam system however since there were multiple types of beams on the system, we could also tell direction. Filtering and adjustments were done for different animal sizes.</p>
 
-<p><img src="/argus/argus1.png" alt="" /></p>
+<p><img src="/argus/argus3.jpg" alt="" /></p>
 
 <p>Here is a picture of one of the initial prototypes. You can see the laser photo receiver on the left and on the opposite side of the pole is an active powered infrared emitter/receiver combination sensor. The top of the pole had a small solar panel that kept the internals of the system powered.</p>
 
-<p><a href="https://www.google.com/patents/US20110227733">https://www.google.com/patents/US20110227733</a></p>
+<p><img src="/argus/argus1.png" alt="" /></p>
 
-<p><img src="/argus/argus3.jpg" alt="" /></p>
+<p><a href="https://www.google.com/patents/US20110227733">https://www.google.com/patents/US20110227733</a></p>
 ]]></content>
 		</item>
 		
@@ -637,7 +637,7 @@ First up I needed a light source, for this I used a 400 watt metal halide bulb. 
 
 <p><img src="/projector/projector_3.jpg" alt="" /></p>
 
-<p>The first iteration of the enclosure and projection lens focusing mechanism was not pretty but it worked. The stain looks silly…</p>
+<p>The first iteration of the enclosure and projection lens focusing mechanism was not pretty but it worked. The stain looks silly&hellip;</p>
 
 <p><img src="/projector/projector_5.jpg" alt="" /></p>
 
@@ -709,40 +709,40 @@ ripped 2×4’s into 2×2’s and built a frame. Then put <sup>1</sup>&frasl;<su
 			<guid>https://spkelly.com/posts/snowmaker/</guid>
 			<description>I built a snowgun that used an air compressor and pressure washer to make ~3-4 inches per hour. An overnight run easily resulted in over a foot of snow in a pretty large area.
 Conditions needed to be right, low humidity and temperatures &amp;lt; 34 or so. Using this chart I could find a night when everything lined up in October.
-The problem is my backyard is flat…so I will need a drop in to do some jumps and rails with friends.</description>
+The problem is my backyard is flat&amp;hellip; so I will need a drop in to do some jumps and rails with friends.</description>
 			<content type="html"><![CDATA[<p>I built a snowgun that used an air compressor and pressure washer to make ~3-4 inches per hour. An overnight run easily resulted in over a foot of snow in a pretty large area.</p>
 
 <p><img src="/snowmaker/snowmaker1.jpg" alt="" /></p>
 
 <p>Conditions needed to be right, low humidity and temperatures &lt; 34 or so. Using this chart I could find a night when everything lined up in October.</p>
 
+<p>The problem is my backyard is flat&hellip; so I will need a drop in to do some jumps and rails with friends.</p>
+
+<p>Keep in mind I did not know what CAD was at this time&hellip;</p>
+
 <p><img src="/snowmaker/snowmaker2.jpg" alt="" /></p>
 
-<p>The problem is my backyard is flat…so I will need a drop in to do some jumps and rails with friends.</p>
+<p>Alright starting to come together&hellip;looks a little&hellip;steep..</p>
 
 <p><img src="/snowmaker/snowmaker3.jpg" alt="" /></p>
 
-<p>Keep in mind I did not know what CAD was at this time…</p>
+<p>Perfect! Just need snow now (can see a pvc flat rail made in the back)</p>
 
 <p><img src="/snowmaker/snowmaker4.jpg" alt="" /></p>
 
-<p>Alright starting to come together…looks a little…steep..</p>
+<p>Cue the SM4 snowgun I made.</p>
 
 <p><img src="/snowmaker/snowmaker5.jpg" alt="" /></p>
 
-<p>Perfect! Just need snow now (can see a pvc flat rail made in the back)</p>
-
 <p><img src="/snowmaker/snowmaker6.jpg" alt="" /></p>
-
-<p>Cue the SM4 snowgun I made.</p>
-
-<p><img src="/snowmaker/snowmaker7.jpg" alt="" /></p>
 
 <p>Decent coverage, does about 3 inches per hour over this area.</p>
 
+<p><img src="/snowmaker/snowmaker7.jpg" alt="" /></p>
+
 <p><img src="/snowmaker/snowmaker8.jpg" alt="" /></p>
 
-<p>Time to leave it for the night and come back to it in the morning with some friends, skis, snowboards, and rails.</p>
+<p>Time to leave it for the night and come back to it in the morning with some friends, skis, and snowboards.</p>
 ]]></content>
 		</item>
 		
