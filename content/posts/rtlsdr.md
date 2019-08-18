@@ -18,6 +18,7 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 
 I setup my antenna for this particular type of signal and frequency range using this diagram:
 ![](/rtlsdr/adams_V-dipole.png)
+  
 ![](/rtlsdr/antenna.jpg)
 
 Then I opened up a program called WxTrack, put in my lat/long and was able to determine when the next pass would be.
@@ -28,7 +29,7 @@ I put my antenna outside, waited for the pass to start, and then started recordi
 
 ![](/rtlsdr/noaa_waveform.png)
 
-Once the signal disappeared, I stopped the recording, and ran the file through noaa-apt which then helped generate this image!
+Once the signal disappeared, I stopped the recording, and ran the file through [noaa-apt](https://github.com/martinber/noaa-apt) which then helped generate this image!
 
 ![](/rtlsdr/test1.jpg)
 
