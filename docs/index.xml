@@ -50,8 +50,8 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
       <pubDate>Sat, 25 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://spkelly.com/posts/vscodevim/</guid>
-      <description>Microsoft came out with an open source text editor called Visual Studio Code . The cool thing about this program was that it was cross-platform so I could move seamlessly between MacOS, Ubuntu, and Windows 10 and always be using the same editor, extensions, and environment.
-I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin. The extension was written in TypeScript but I decided to start contributing some bug fixes for issues that annoyed ME and figured I would learn typescript along the way.</description>
+      <description>Microsoft came out with an open source text editor called Visual Studio Code. The cool thing about this application was that it was cross-platform so I could move seamlessly between MacOS, Ubuntu, and Windows 10 and always be using the same editor, extensions, and environment. I will save the conversation about Electron, the framework that this application uses for another time.
+I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin.</description>
     </item>
     
     <item>

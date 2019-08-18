@@ -93,8 +93,9 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 <p>First up, I wanted to try and capture data from a NOAA satellite as it passed overhead. These satellites are constantly transmitting data/images at 137Mhz and when in range, this data can easily be received and decoded.</p>
 
 <p>I setup my antenna for this particular type of signal and frequency range using this diagram:
-<img src="/rtlsdr/adams_V-dipole.png" alt="" />
-<img src="/rtlsdr/antenna.jpg" alt="" /></p>
+<img src="/rtlsdr/adams_V-dipole.png" alt="" /></p>
+
+<p><img src="/rtlsdr/antenna.jpg" alt="" /></p>
 
 <p>Then I opened up a program called WxTrack, put in my lat/long and was able to determine when the next pass would be.</p>
 
@@ -104,7 +105,7 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 
 <p><img src="/rtlsdr/noaa_waveform.png" alt="" /></p>
 
-<p>Once the signal disappeared, I stopped the recording, and ran the file through noaa-apt which then helped generate this image!</p>
+<p>Once the signal disappeared, I stopped the recording, and ran the file through <a href="https://github.com/martinber/noaa-apt">noaa-apt</a> which then helped generate this image!</p>
 
 <p><img src="/rtlsdr/test1.jpg" alt="" /></p>
 

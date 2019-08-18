@@ -61,8 +61,9 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 <p>First up, I wanted to try and capture data from a NOAA satellite as it passed overhead. These satellites are constantly transmitting data/images at 137Mhz and when in range, this data can easily be received and decoded.</p>
 
 <p>I setup my antenna for this particular type of signal and frequency range using this diagram:
-<img src="/rtlsdr/adams_V-dipole.png" alt="" />
-<img src="/rtlsdr/antenna.jpg" alt="" /></p>
+<img src="/rtlsdr/adams_V-dipole.png" alt="" /></p>
+
+<p><img src="/rtlsdr/antenna.jpg" alt="" /></p>
 
 <p>Then I opened up a program called WxTrack, put in my lat/long and was able to determine when the next pass would be.</p>
 
@@ -72,7 +73,7 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 
 <p><img src="/rtlsdr/noaa_waveform.png" alt="" /></p>
 
-<p>Once the signal disappeared, I stopped the recording, and ran the file through noaa-apt which then helped generate this image!</p>
+<p>Once the signal disappeared, I stopped the recording, and ran the file through <a href="https://github.com/martinber/noaa-apt">noaa-apt</a> which then helped generate this image!</p>
 
 <p><img src="/rtlsdr/test1.jpg" alt="" /></p>
 
@@ -232,19 +233,19 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 			<pubDate>Sat, 25 Mar 2017 00:00:00 +0000</pubDate>
 			
 			<guid>https://spkelly.com/posts/vscodevim/</guid>
-			<description>Microsoft came out with an open source text editor called Visual Studio Code . The cool thing about this program was that it was cross-platform so I could move seamlessly between MacOS, Ubuntu, and Windows 10 and always be using the same editor, extensions, and environment.
-I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin. The extension was written in TypeScript but I decided to start contributing some bug fixes for issues that annoyed ME and figured I would learn typescript along the way.</description>
-			<content type="html"><![CDATA[<p>Microsoft came out with an open source text editor called Visual Studio Code . The cool thing about this program was that it was cross-platform so I could move seamlessly between MacOS, Ubuntu, and Windows 10 and always be using the same editor, extensions, and environment.</p>
+			<description>Microsoft came out with an open source text editor called Visual Studio Code. The cool thing about this application was that it was cross-platform so I could move seamlessly between MacOS, Ubuntu, and Windows 10 and always be using the same editor, extensions, and environment. I will save the conversation about Electron, the framework that this application uses for another time.
+I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin.</description>
+			<content type="html"><![CDATA[<p>Microsoft came out with an open source text editor called Visual Studio Code. The cool thing about this application was that it was cross-platform so I could move seamlessly between MacOS, Ubuntu, and Windows 10 and always be using the same editor, extensions, and environment. I will save the conversation about Electron, the framework that this application uses for another time.</p>
 
-<p>I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin. The extension was written in TypeScript but I decided to start contributing some bug fixes for issues that annoyed ME and figured I would learn typescript along the way.</p>
+<p>I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin. The extension was written in TypeScript (which I didn&rsquo;t know at the time) but I decided to start contributing some bug fixes for issues that annoyed ME and figured I would learn typescript along the way.</p>
 
 <p><a href="https://github.com/VSCodeVim/Vim">https://github.com/VSCodeVim/Vim</a></p>
 
 <p><img src="/vscodevim/vim1.png" alt="" /></p>
 
-<p>Next thing I know I was one of the core maintainers of the extension and was contributing very often. I learned an enormous amount about open-source development, managing a community, and working with typescript. Currently, the extension has over 300,000 installs, and using telemetry we can see that there are over 8,000 active users every day. This is pretty exciting and is cool to be shipping code to that many users.</p>
+<p>Next thing I know I was one of the core maintainers of the extension and was contributing very often. I learned an enormous amount about open-source development, managing a community, and working with typescript. Currently, the extension has over 300,000 installs (2019 update: 7.9 million&hellip;), and using telemetry we can see that there are over 8,000 active users every day. This is pretty exciting and is cool to be shipping code to that many users.</p>
 
-<p>At the time of writing this, I have 172 commits to the extensions repository. The group of developers working on this is interesting, it is mostly the main developer, a few Microsoft employees from the visual studio code team, and myself, although the plugin has had many many contributors in the past. It is cool to see Microsoft invested in helping develop plugins to further the adoption of their open source software.</p>
+<p>At the time of writing this, I have 172 commits to the extensions repository (2019 update: 370+). The group of developers working on this is interesting, it is mostly the main developer, a few Microsoft employees from the visual studio code team, and myself, although the plugin has had many many contributors in the past. It is cool to see Microsoft invested in helping develop plugins to further the adoption of their open source software.</p>
 
 <p>I continue to contribute to the extension weekly, and somehow managed to really really like typescript in the end&hellip;</p>
 ]]></content>
@@ -571,7 +572,7 @@ I worked on the automated assembly of the tank once the parts were already made.
 
 <p>I worked on the automated assembly of the tank once the parts were already made. I also worked a few 3 hours shifts on the injection molding machine to get as many of our parts made as we could throughout the semester.</p>
 
-<p>We had a 6 axis Staubli robot and a 4 axis Adept Cobra robot. I was just a part of a larger team here but I did quite a bit of fixture design, machining, and robot programming to help the automated assembly be a reality. In the end, we assembled a few using the robots, but it was faster to just build them by hand in the last few days of the semester&hellip;.oops.</p>
+<p>We had a 6 axis Staubli robot and a 4 axis Adept Cobra robot. I was just a part of a larger team here but I did quite a bit of fixture design, machining, and robot programming to help the automated assembly be a reality. In the end, we assembled a few using the robots, but it was faster to just build them by hand in the last few days of the semester&hellip;oops.</p>
 
 <p><img src="/aml/aml1.jpg" alt="" /></p>
 
