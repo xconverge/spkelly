@@ -28,23 +28,6 @@ const listen = (ele, e, callback) => {
  * Functions
  */
 
-// Auto Hide Header
-//
-let header = document.getElementById('site-header');
-let lastScrollPosition = window.pageYOffset;
-
-const autoHideHeader = () => {
-  let currentScrollPosition = Math.max(window.pageYOffset, 0);
-  if (currentScrollPosition > lastScrollPosition) {
-    header.classList.remove('slideInUp');
-    header.classList.add('slideOutDown');
-  } else {
-    header.classList.remove('slideOutDown');
-    header.classList.add('slideInUp');
-  }
-  lastScrollPosition = currentScrollPosition;
-}
-
 // Mobile Menu Toggle
 //
 let mobileMenuVisible = false;
@@ -93,8 +76,6 @@ if (header !== null) {
   });
 
   window.addEventListener('scroll', throttle(() => {
-    autoHideHeader();
-
     if (mobileMenuVisible == true) {
       toggleMobileMenu();
     }
