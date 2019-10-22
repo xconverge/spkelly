@@ -70,5 +70,17 @@ googleAnalytics = "UA-145866992-1"
 
   [[menu.main]]
     name = "Projects"
+    identifier = "projects"
     url = "posts/"
     weight = 10
+
+  [[menu.main]]
+    name = "RTL-SDR"
+    parent = "projects"
+    weight = 1
+    url = "posts/rtlsdr/"
+  [[menu.main]]
+    name = "Website Update"
+    parent = "projects"
+    weight = 1
+    url = "posts/websiteupdate/"

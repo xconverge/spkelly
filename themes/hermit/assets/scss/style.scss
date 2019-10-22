@@ -874,3 +874,57 @@ hr.post-end {
     right: 1.2em;
   }
 }
+
+/* The dropdown container */
+.dropdown {
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  margin: 0 0 0 0px;
+  border: none;
+  outline: none;
+  background-color: $dark-grey;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-size: 1.1em;
+  opacity: .8;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $dark-grey;
+  min-width: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content li {
+  font-size: 12px;
+  margin-left: 0;
+  float: none;
+  text-align: left;
+  color: $text;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (min-width: 600px) {
+	.dropdown .dropbtn {
+		  font-size: 18px;
+	}
+	.dropdown-content li {
+		font-size: 14px;
+	}
+}

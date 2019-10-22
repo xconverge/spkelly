@@ -1,12 +1,16 @@
-		{{- range .Site.Menus.main }}
-			{{- if .HasChildren }}
-				<a href="{{ .URL | absLangURL }}" class="has-children">{{ .Name }}</a>
-				<span class="sub-menu">
-				{{- range .Children }}
-					<a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-				{{- end }}
-				</span>
-			{{- else }}
-				<a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-			{{- end }}
-		{{- end }}
+{{- range .Site.Menus.main }}
+	{{ if .HasChildren}}
+		<div class="dropdown">
+			<button class="dropbtn">
+				{{ partial "menu.main.html" .}}
+			</button>
+			<div class="dropdown-content">
+				{{range .Children}}
+					{{ partial "menu.main.html" .}}
+				{{ end }}
+			</div>
+		</div>
+	{{ else }}
+		{{ partial "menu.main.html" .}}
+	{{ end }}
+{{- end }}
