@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="SSTV image from ISS">
+<meta itemprop="description" content="Ever since I started messing around with SDR and HAM radio, I have been eager to receive something from the ISS. I have tried a few times as it passed overhead with my handheld radio but never had any luck.
+A few times a year, the ISS transmits SSTV (slow-scan tv) signals with their onboard radio transmitter, to commemorate certain events. These can be monitored here:
+http://ariss-sstv.blogspot.com/
+These transmissions only last a few days, and you need to have a decent pass overhead of the ISS during this window to try and receive a signal.">
+
+
+<meta itemprop="datePublished" content="2019-12-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="381">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta property="og:title" content="SSTV image from ISS" />
+<meta property="og:description" content="Ever since I started messing around with SDR and HAM radio, I have been eager to receive something from the ISS. I have tried a few times as it passed overhead with my handheld radio but never had any luck.
+A few times a year, the ISS transmits SSTV (slow-scan tv) signals with their onboard radio transmitter, to commemorate certain events. These can be monitored here:
+http://ariss-sstv.blogspot.com/
+These transmissions only last a few days, and you need to have a decent pass overhead of the ISS during this window to try and receive a signal." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://spkelly.com/posts/sstvfromiss/" />
+<meta property="article:published_time" content="2019-12-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-28T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SSTV image from ISS"/>
+<meta name="twitter:description" content="Ever since I started messing around with SDR and HAM radio, I have been eager to receive something from the ISS. I have tried a few times as it passed overhead with my handheld radio but never had any luck.
+A few times a year, the ISS transmits SSTV (slow-scan tv) signals with their onboard radio transmitter, to commemorate certain events. These can be monitored here:
+http://ariss-sstv.blogspot.com/
+These transmissions only last a few days, and you need to have a decent pass overhead of the ISS during this window to try and receive a signal."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>SSTV image from ISS</title>
+	<link rel="stylesheet" href="https://spkelly.com/css/style.min.c4a95f196098bfad5de5adc082f9b0c85fcda4c0719469517b42c1bf7be8c144.css" integrity="sha256-xKlfGWCYv61d5a3AgvmwyF/NpMBxlGlRe0LBv3vowUQ=">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://spkelly.com">Sean Kelly</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://spkelly.com/posts/">Projects</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://www.linkedin.com/in/seankellyyy/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/xconverge" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="mailto:seankellyy@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://spkelly.com/posts/">Projects</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Dec 28, 2019</span></div>
+				<h1>SSTV image from ISS</h1>
+			</header>
+			<div class="content">
+				<p>Ever since I started messing around with SDR and HAM radio, I have been eager to receive something from the ISS. I have tried a few times as it passed overhead with my handheld radio but never had any luck.</p>
+
+<p>A few times a year, the ISS transmits SSTV (slow-scan tv) signals with their onboard radio transmitter, to commemorate certain events. These can be monitored here:</p>
+
+<p><a href="http://ariss-sstv.blogspot.com/">http://ariss-sstv.blogspot.com/</a></p>
+
+<p>These transmissions only last a few days, and you need to have a decent pass overhead of the ISS during this window to try and receive a signal.</p>
+
+<p>Well the blog above had an event coming up that I wanted to try and receive!</p>
+
+<p>&ldquo;SSTV from December 28, 2019 until January 1, 2020
+ARISS will be supporting SSTV transmissions worldwide in memory of cosmonaut Alexei Leonov. Event runs from Dec 28 (11:00 UTC is the setup time) until Jan 1, 2020 (18:20 UTC when the system is scheduled for shutdown). Transmissions should be on the standard frequency of 145.800 MHz and in the PD 120 format.&rdquo;</p>
+
+<p>I checked <a href="https://www.heavens-above.com/PassSummary.aspx">https://www.heavens-above.com/PassSummary.aspx</a> and found a pass that wasn&rsquo;t in the middle of the night (for my own sanity&hellip;)</p>
+
+<p>I decided to use my SDR to record the audio transmission, so that I could post process the results after the fact and I could tweak the gain and do a bit of filtering as well if needed. I setup my dipole antenna for 145.8 MHz, tuned SDR# to 145.8 as well, and waited for the pass.</p>
+
+<p>SSTV is pretty interesting, it takes about 100 seconds to receive 240 lines of a colored image using frequency modulation with a pretty small bandwidth of up to 3kHz!</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Slow-scan_television">https://en.wikipedia.org/wiki/Slow-scan_television</a></p>
+
+<p>Since a pass lasts only a few minutes, I got the tail end of one image, and then there was a gap of transmission during the prime overhead portion of the pass, and the 2nd image was on the tail portion of the pass.</p>
+
+<p>Here is what the end/start of the images look like, there is a header that contains a start tone, some calibration data, and some other signalling codes that are used to identify the mode of encoding. This header is where the green line is.</p>
+
+<p><img src="/sstv/startend.png" alt="" /></p>
+
+<p>Here is the full image I got towards the end of the pass overhead!</p>
+
+<p><img src="/sstv/full.png" alt="" /></p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://spkelly.com/posts/websiteupdate/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Website Update</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+
+
+	<script src="https://spkelly.com/js/main.min.af5e2b9ecc8251c61915a9e332bf861be8420dfd77a2346d7663168370e76837.js" integrity="sha256-r14rnsyCUcYZFanjMr+GG+hCDf13ojRtdmMWg3DnaDc="></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-145866992-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</body>
+
+</html>

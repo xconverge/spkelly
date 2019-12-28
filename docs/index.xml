@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://spkelly.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SSTV image from ISS</title>
+      <link>https://spkelly.com/posts/sstvfromiss/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/sstvfromiss/</guid>
+      <description>Ever since I started messing around with SDR and HAM radio, I have been eager to receive something from the ISS. I have tried a few times as it passed overhead with my handheld radio but never had any luck.
+A few times a year, the ISS transmits SSTV (slow-scan tv) signals with their onboard radio transmitter, to commemorate certain events. These can be monitored here:
+http://ariss-sstv.blogspot.com/
+These transmissions only last a few days, and you need to have a decent pass overhead of the ISS during this window to try and receive a signal.</description>
+    </item>
     
     <item>
       <title>Website Update</title>
@@ -106,16 +118,6 @@ Vince started with the CAD. A large majority of this project was done on the tra
 90% of this was done in hotels and airplanes while travelling for work.
 I was able to VPN to work from a Southwest plane, and connect to a mobile robot and send it to different parts of the building using XCode from 40,000 feet.
 Once I submitted the application to the Apple app store, they asked me to send them a video of the application working before they would approve it.</description>
-    </item>
-    
-    <item>
-      <title>Word Clock</title>
-      <link>https://spkelly.com/posts/wordclock/</link>
-      <pubDate>Sun, 24 Mar 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://spkelly.com/posts/wordclock/</guid>
-      <description>This was a rushed project that actually turned out pretty well from the outside! It was based mostly on this instructable as the inspiration and reference
-First I went to office max and had 3 or 4 transparencies printed out with the pattern I wanted for the front. I wanted multiple copies so that when I put them all on top of each other, the darkened black sections were truly opaque.</description>
     </item>
     
   </channel>
