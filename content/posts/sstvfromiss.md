@@ -6,9 +6,9 @@ featuredImg: ""
 tags: 
 ---
 
-Ever since I started messing around with SDR and HAM radio, I have been eager to receive something from the ISS. I have tried a few times as it passed overhead with my handheld radio but never had any luck.
+Ever since I started messing around with SDR and HAM radio, I have been eager to receive something from the ISS. I have tried a few times as it passed overhead with my handheld radio, but never had any luck.
 
-A few times a year, the ISS transmits SSTV (slow-scan tv) signals with their onboard radio transmitter, to commemorate certain events. These can be monitored here:
+A few times a year, the ISS transmits SSTV (slow-scan tv) signals with their onboard radio transmitter, to commemorate certain events. These can be monitored at ARISS (Amateur Radio on the International Space Station):
 
 http://ariss-sstv.blogspot.com/
 
@@ -27,9 +27,9 @@ SSTV is pretty interesting, it takes about 100 seconds to receive 240 lines of a
 
 https://en.wikipedia.org/wiki/Slow-scan_television
 
-Since a pass lasts only a few minutes, I got the tail end of one image, and then there was a gap of transmission during the prime overhead portion of the pass, and the 2nd image was on the tail portion of the pass.
+Since a pass lasts only a few minutes, I got the tail end of one image followed by a gap of transmission during the prime overhead portion of the pass, and a 2nd image during the tail end of the pass.
 
-I used [MMSSTV](https://hamsoft.ca/pages/mmsstv.php) to decode the image from my recorded .wav of the pass. I set my computer up to loopback audio, set the input source in MMSSTV to be the output from my laptop with a [virtual audio cable](https://www.vb-audio.com/Cable/), and used mode auto-detect.
+I used [MMSSTV](https://hamsoft.ca/pages/mmsstv.php) to decode the image from my recorded .wav of the pass. I set my computer up to loopback audio, set the input source in MMSSTV to be the output from my laptop with a [virtual audio cable](https://www.vb-audio.com/Cable/), and used mode auto-detect (PD120).
 
 Here is what the end/start of the images look like, there is a header that contains a start tone, some calibration data, and some other signalling codes that are used to identify the mode of encoding. This header is where the green line is.
 
@@ -38,3 +38,7 @@ Here is what the end/start of the images look like, there is a header that conta
 Here is the full image I got towards the end of the pass overhead!
 
 ![](/sstv/full.png)
+
+I submitted my image as proof to ARISS and received this certificate:
+
+![](/sstv/award.png)
