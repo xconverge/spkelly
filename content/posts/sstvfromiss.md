@@ -29,7 +29,7 @@ https://en.wikipedia.org/wiki/Slow-scan_television
 
 Since a pass lasts only a few minutes, I got the tail end of one image, and then there was a gap of transmission during the prime overhead portion of the pass, and the 2nd image was on the tail portion of the pass.
 
-I used [MMSTV](https://hamsoft.ca/pages/mmsstv.php) to decode the image from my recorded .wav of the pass. I set my computer up to loopback audio, set the input source in MMSTV to be the output from my laptop with a [virtual audio cable](https://www.vb-audio.com/Cable/), and used mode auto-detect.
+I used [MMSSTV](https://hamsoft.ca/pages/mmsstv.php) to decode the image from my recorded .wav of the pass. I set my computer up to loopback audio, set the input source in MMSSTV to be the output from my laptop with a [virtual audio cable](https://www.vb-audio.com/Cable/), and used mode auto-detect.
 
 Here is what the end/start of the images look like, there is a header that contains a start tone, some calibration data, and some other signalling codes that are used to identify the mode of encoding. This header is where the green line is.
 
