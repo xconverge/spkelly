@@ -9,16 +9,13 @@
 	<meta name="msapplication-TileColor" content="#494f5c">
 <meta itemprop="name" content="Battery Reconditioning">
 <meta itemprop="description" content="Recently I came across a project where someone was using an off the shelf digital multimeter, power supply, and electronic load to recondition hybrid batteries. This involved disassembling the full pack of cells, testing, removing, and replacing bad cells, replacing contacts, etc, before doing multiple charge and discharge cycles to verify the improvement and condition of the battery. To charge, the power supply was turned on while logging with the DMM, to discharge, the eload was used in various modes (constant current, constant power) to quantify the capacity of the cell or pack of cells.">
-
-
 <meta itemprop="datePublished" content="2017-09-11T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-09-11T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="985">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta property="og:title" content="Battery Reconditioning" />
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Battery Reconditioning" />
 <meta property="og:description" content="Recently I came across a project where someone was using an off the shelf digital multimeter, power supply, and electronic load to recondition hybrid batteries. This involved disassembling the full pack of cells, testing, removing, and replacing bad cells, replacing contacts, etc, before doing multiple charge and discharge cycles to verify the improvement and condition of the battery. To charge, the power supply was turned on while logging with the DMM, to discharge, the eload was used in various modes (constant current, constant power) to quantify the capacity of the cell or pack of cells." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://spkelly.com/posts/batteryreconditioning/" />
@@ -36,7 +33,7 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>Battery Reconditioning</title>
-	<link rel="stylesheet" href="https://spkelly.com/css/style.min.c4a95f196098bfad5de5adc082f9b0c85fcda4c0719469517b42c1bf7be8c144.css" integrity="sha256-xKlfGWCYv61d5a3AgvmwyF/NpMBxlGlRe0LBv3vowUQ=">
+	<link rel="stylesheet" href="https://spkelly.com/css/style.min.ed3bfc8ed6fd9d6dcbc9b93ab0a9c301135baefe158fb9ca8281818e7cd94a36.css" integrity="sha256-7Tv8jtb9nW3Lybk6sKnDARNbrv4Vj7nKgoGBjnzZSjY=">
 	
 </head>
 
@@ -74,39 +71,22 @@
 			</header>
 			<div class="content">
 				<p>Recently I came across a project where someone was using an off the shelf digital multimeter, power supply, and electronic load to recondition hybrid batteries. This involved disassembling the full pack of cells, testing, removing, and replacing bad cells, replacing contacts, etc, before doing multiple charge and discharge cycles to verify the improvement and condition of the battery. To charge, the power supply was turned on while logging with the DMM, to discharge, the eload was used in various modes (constant current, constant power) to quantify the capacity of the cell or pack of cells. This was all done with separate softwares and had to be closely monitored to avoid damage to the pack or equipment.</p>
-
 <p>There was already an existing open source software that could plot and log data from the DMM using the RS232 interface.</p>
-
 <p><a href="https://www.26th.net/public/projects/vc8145/">https://www.26th.net/public/projects/vc8145/</a></p>
-
-<p><img src="/batterycharging/vc8145orig.png" alt="" /></p>
-
-<p><img src="/batterycharging/vc8145.jpg" alt="" /></p>
-
+<p><img src="/batterycharging/vc8145orig.png" alt=""></p>
+<p><img src="/batterycharging/vc8145.jpg" alt=""></p>
 <p>He was using this SW, in conjunction with some software in Chinese that came with the power supply and electronic load. Both pieces of hardware had RS232 interfaces as well.</p>
-
-<p><img src="/batterycharging/eload.jpg" alt="Electronic load" /></p>
-
-<p><img src="/batterycharging/hspy.png" alt="Power supply" /></p>
-
+<p><img src="/batterycharging/eload.jpg" alt="Electronic load"></p>
+<p><img src="/batterycharging/hspy.png" alt="Power supply"></p>
 <p>The first step was to interpret the communication protocol for each one of these devices and add the functionality into the DMM logging software so that we have a single piece of software that can talk to all 3 devices via RS232. This will allow us to synchronize usage of the devices in the future.</p>
-
 <p>The communication protocols for these devices were very difficult to find. For the power supply, I had to contact an ebay seller, and they sent me a comm protocol in chinese. Google translate did a decent job of getting something that was usable for prototyping.</p>
-
 <p>With the help of a serial sniffer, I was able to duplicate the packet structures for both new devices. The eload uses a 26 byte frame formatted like this:</p>
-
-<p><img src="/batterycharging/eloadPackets.png" alt="" /></p>
-
+<p><img src="/batterycharging/eloadPackets.png" alt=""></p>
 <p>The checksum was simply the sum of the previous 25 bytes. I created another Qt widget for the eload, added some controls, added a communication thread to handle the serial communication and implementation of this protocol, and now had control of the electronic load!</p>
-
 <p>The power supply communication proved to be a bit trickier due to the translated documentation&hellip;</p>
-
-<p><img src="/batterycharging/psupacket.png" alt="" /></p>
-
+<p><img src="/batterycharging/psupacket.png" alt=""></p>
 <p>Hmm&hellip;so it looks like there is a mandatory silent period before and after the packet. The packet then has a dynamic size based on the type of command being sent. Finally a 16bit crc is done on the data. Again using the packet sniffer I sent some commands using the existing software (all in chinese) and reverse engineered the commands for my purpose. I was able to create dummy packets in a unit test with the same contents from my serial sniffing tests to verify my crc algorithm was outputting the same results. With some experimentation I figured out how the voltage always had a x100 multiplier on the value and the current had a x10 multiplier, this allowed 2 bytes to represent relatively fine currents and voltages. I then created another Qt widget and comm thread to manage the power supply and the new comm protocol.</p>
-
 <p>Once I could control all 3 devices properly, I then added a few minor extras for ease of use:</p>
-
 <ul>
 <li>Ability to zoom the plot easily</li>
 <li>Reset zoom</li>
@@ -118,13 +98,9 @@
 <li>The ability to log voltage data from both the eload and the psu so that the DMM is not 100% necessary</li>
 <li>Safety settings for minimum and maximum voltages before turning devices off</li>
 </ul>
-
 <p>The final part of this project was to take all of this newfound power and synchronize usage of the devices in a way that automated the original methods for reconditioning the batteries.</p>
-
 <p>I created what I called the workflow controller. I wanted a way to input a formula or series of steps and press GO. I wanted steps like charge with x settings, sleep for 10 minutes, discharge with x settings, sleep for 10 minutes.</p>
-
 <p>I decided to use yaml and yaml-cpp for its relative ease of use. I added the yaml-cpp dependency and came up with a schema I wanted to use. A valid workflow looks something like this:</p>
-
 <pre><code>- type: charge
   voltage: 20
   current: 10
@@ -180,17 +156,11 @@
   deltav: 3
   timeout: 1
   maxvoltage: 300
-</code></pre>
-
-<p>I would then load this file, and parse it into a vector of SequenceCommands with the applicable settings. I then created a thread that when started, will tick every 10ms, check the state of all inputs, and increment to the next command or step of the sequence if certain criteria were met.</p>
-
+</code></pre><p>I would then load this file, and parse it into a vector of SequenceCommands with the applicable settings. I then created a thread that when started, will tick every 10ms, check the state of all inputs, and increment to the next command or step of the sequence if certain criteria were met.</p>
 <p>Whether charging, discharging, or sleeping, a timeout was active which if reached would consider the step done and move on (after turning off all devices in use). When charging a voltage and current were set and sent to the PSU, then the voltage was monitored for a charge complete scenario. When discharging, you can either use power or constant current modes, and again the voltage is monitored for a discharge or minimum voltage scenario.</p>
-
-<p><img src="/batterycharging/workflow.png" alt="Example workflow loaded" /></p>
-
+<p><img src="/batterycharging/workflow.png" alt="Example workflow loaded"></p>
 <p>The end result is the ability to put a new battery cell or pack onto the rig, hook everything up, load a sequence, press “Start”, and come back in several hours later with a completed cycle!</p>
-
-<p><img src="/batterycharging/screenshot.png" alt="Additional widgets for workflow, electronic load, and power supply added" /></p>
+<p><img src="/batterycharging/screenshot.png" alt="Additional widgets for workflow, electronic load, and power supply added"></p>
 
 			</div>
 			<hr class="post-end">

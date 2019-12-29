@@ -12,16 +12,13 @@
 This is the kit I bought for $30: Amazon link
 Then I installed some free software SDR# which allows you to tune filters and gain and install plugins.
 First up, I wanted to try and capture data from a NOAA satellite as it passed overhead.">
-
-
 <meta itemprop="datePublished" content="2019-06-29T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-06-29T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="373">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta property="og:title" content="RTL-SDR" />
+<meta itemprop="keywords" content="" /><meta property="og:title" content="RTL-SDR" />
 <meta property="og:description" content="SDR (Software defined radio) is a technology that shrinks all of the amplifiers/mixers/components of a radio system into a tiny USB dongle and some computer software.
 This is the kit I bought for $30: Amazon link
 Then I installed some free software SDR# which allows you to tune filters and gain and install plugins.
@@ -45,7 +42,7 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>RTL-SDR</title>
-	<link rel="stylesheet" href="https://spkelly.com/css/style.min.c4a95f196098bfad5de5adc082f9b0c85fcda4c0719469517b42c1bf7be8c144.css" integrity="sha256-xKlfGWCYv61d5a3AgvmwyF/NpMBxlGlRe0LBv3vowUQ=">
+	<link rel="stylesheet" href="https://spkelly.com/css/style.min.ed3bfc8ed6fd9d6dcbc9b93ab0a9c301135baefe158fb9ca8281818e7cd94a36.css" integrity="sha256-7Tv8jtb9nW3Lybk6sKnDARNbrv4Vj7nKgoGBjnzZSjY=">
 	
 </head>
 
@@ -83,52 +80,30 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 			</header>
 			<div class="content">
 				<p>SDR (Software defined radio) is a technology that shrinks all of the amplifiers/mixers/components of a radio system into a tiny USB dongle and some computer software.</p>
-
 <p>This is the kit I bought for $30:
-<img src="/rtlsdr/rtlsdrkit.jpg" alt="" /></p>
-
+<img src="/rtlsdr/rtlsdrkit.jpg" alt=""></p>
 <p><a href="https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B011HVUEME/">Amazon link</a></p>
-
 <p>Then I installed some free software SDR# which allows you to tune filters and gain and install plugins.</p>
-
 <p>First up, I wanted to try and capture data from a NOAA satellite as it passed overhead. These satellites are constantly transmitting data/images at 137Mhz and when in range, this data can easily be received and decoded.</p>
-
 <p>I setup my antenna for this particular type of signal and frequency range using this diagram:
-<img src="/rtlsdr/adams_V-dipole.png" alt="" /></p>
-
-<p><img src="/rtlsdr/antenna.jpg" alt="" /></p>
-
+<img src="/rtlsdr/adams_V-dipole.png" alt=""></p>
+<p><img src="/rtlsdr/antenna.jpg" alt=""></p>
 <p>Then I opened up a program called WxTrack, put in my lat/long and was able to determine when the next pass would be.</p>
-
-<p><img src="/rtlsdr/wxtrack.png" alt="" /></p>
-
+<p><img src="/rtlsdr/wxtrack.png" alt=""></p>
 <p>I put my antenna outside, waited for the pass to start, and then started recording the audio as it was transmitted.</p>
-
-<p><img src="/rtlsdr/noaa_waveform.png" alt="" /></p>
-
+<p><img src="/rtlsdr/noaa_waveform.png" alt=""></p>
 <p>Once the signal disappeared, I stopped the recording, and ran the file through <a href="https://github.com/martinber/noaa-apt">noaa-apt</a> which then helped generate this image!</p>
-
-<p><img src="/rtlsdr/test1.jpg" alt="" /></p>
-
+<p><img src="/rtlsdr/test1.jpg" alt=""></p>
 <p>Next up I wanted to try and receive data from a newer satellite known as METEOR-M2. This is a newer russian satellite that transmits a digital signal. There was another METEOR satellite that was supposed to be launched in 2017, however didn’t make it successfully to be operational. This digital signal then has to be demodulated and decoded into the image. This satellite has images that are ~10x higher resolution than the older NOAA satellites, however there is currently only 1 operational (vs ~4 for NOAA) so there are limited opportunities to receive data. Another is planned to be launched in July 2019, so we will see what sort of data that transmits! Here is the wave form during the METEOR-M2 pass:</p>
-
-<p><img src="/rtlsdr/meteor-m2_waveform.png" alt="" /></p>
-
+<p><img src="/rtlsdr/meteor-m2_waveform.png" alt=""></p>
 <p>And then here is what was generated from the decoding of the data!</p>
-
-<p><img src="/rtlsdr/2019-6-29-10-29-47-795-rectified.jpg" alt="" /></p>
-
+<p><img src="/rtlsdr/2019-6-29-10-29-47-795-rectified.jpg" alt=""></p>
 <p>Next I wanted to track airplanes near me using their ADS-B protocol. This is a signal coming in at 1090Mhz so this is the antenna configuration necessary:</p>
-
-<p><img src="/rtlsdr/antenna2.jpg" alt="" /></p>
-
+<p><img src="/rtlsdr/antenna2.jpg" alt=""></p>
 <p>I ran some software called RTL1090 which uses the hardware to decode the data being received and send it via TCP to PlanePlotter which shows the planes in a visual way</p>
-
-<p><img src="/rtlsdr/Capture.png" alt="" /></p>
-
+<p><img src="/rtlsdr/Capture.png" alt=""></p>
 <p>I verified with FlightAware that this data/flights/call signs matched!</p>
-
-<p><img src="/rtlsdr/Capture2.png" alt="" /></p>
+<p><img src="/rtlsdr/Capture2.png" alt=""></p>
 
 			</div>
 			<hr class="post-end">
