@@ -10,7 +10,7 @@
 		<atom:link href="https://spkelly.com/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>SSTV image from ISS</title>
+			<title>SSTV Image From ISS</title>
 			<link>https://spkelly.com/posts/sstvfromiss/</link>
 			<pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
 			
@@ -41,6 +41,8 @@ ARISS will be supporting SSTV transmissions worldwide in memory of cosmonaut Ale
 <p><a href="https://en.wikipedia.org/wiki/Slow-scan_television">https://en.wikipedia.org/wiki/Slow-scan_television</a></p>
 
 <p>Since a pass lasts only a few minutes, I got the tail end of one image, and then there was a gap of transmission during the prime overhead portion of the pass, and the 2nd image was on the tail portion of the pass.</p>
+
+<p>I used <a href="https://hamsoft.ca/pages/mmsstv.php">MMSTV</a> to decode the image from my recorded .wav of the pass. I set my computer up to loopback audio, set the input source in MMSTV to be the output from my laptop with a <a href="https://www.vb-audio.com/Cable/">virtual audio cable</a>, and used mode auto-detect.</p>
 
 <p>Here is what the end/start of the images look like, there is a header that contains a start tone, some calibration data, and some other signalling codes that are used to identify the mode of encoding. This header is where the green line is.</p>
 
