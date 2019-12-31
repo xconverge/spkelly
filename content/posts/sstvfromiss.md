@@ -42,3 +42,14 @@ Here is the full image I got towards the end of the pass overhead!
 I submitted my image as proof to ARISS and received this certificate:
 
 ![](/sstv/award.png)
+
+Edit:
+2 Days later, I was still within the transmission window and had another decent pass coming in. Here was what I got:
+
+![](/sstv/attempt_2.png)
+
+Pretty frustrating, here is a diagram of the pass. The images take ~2 minutes to transmit, followed by 2 minutes of radio silence, and then they start transmission of a new image. I drew the red line on the 2 minutes of silence part of this "perfect" pass. The image I did get was on the tail end of the pass. I heard everything loud and clear on the entry and the exit, but the 2 minutes of silence during the prime portion was no fun!
+
+![](/sstv/pass.png)
+
+I should have used my radio to ask them to slow down.
