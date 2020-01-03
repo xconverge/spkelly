@@ -18,7 +18,7 @@ I chose this primarily for it's simplicity and speed for a static site. Building
 
 The second phase of this project was to move hosting to something free. The site is so small (<100Mb) that I figured there had to be somewhere free to host it. I considered AWS free tier, but in the end went with Github Pages. I had seen quite a few .github.io pages in the past and wanted to see how straightforward it was to use for my use case.
 
-I moved all of my sourcecode into a repository (https://github.com/xconverge/spkelly), pointed the repo to the docs/ folder and it was then publicly available! Easy. Next up was to add a CNAME record and switch to a custom domain name.
+I moved all of my sourcecode into a [GitHub repo](https://github.com/xconverge/spkelly), configured the pages repo to use the docs/ folder as the content, and it was then publicly available! Easy. Next up was to add a CNAME record and switch to a custom domain name.
 
 https://www.spkelly.com was now reborn!
 

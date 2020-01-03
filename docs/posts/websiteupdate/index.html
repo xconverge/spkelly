@@ -13,7 +13,7 @@ Since 100% of the content is static, wordpress was overkill. For my use case, it
 I considered converting all of the posts to individual HTML pages, with a decent index.">
 <meta itemprop="datePublished" content="2019-08-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-08-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="323">
+<meta itemprop="wordCount" content="328">
 
 
 
@@ -82,7 +82,7 @@ I considered converting all of the posts to individual HTML pages, with a decent
 <p><img src="/websiteupdate/hugo.png" alt=""></p>
 <p>I chose this primarily for it's simplicity and speed for a static site. Building the site went pretty quickly, now all of my posts/projects are each a single markdown file, and adding a new project is as simple as adding a new markdown file.</p>
 <p>The second phase of this project was to move hosting to something free. The site is so small (&lt;100Mb) that I figured there had to be somewhere free to host it. I considered AWS free tier, but in the end went with Github Pages. I had seen quite a few .github.io pages in the past and wanted to see how straightforward it was to use for my use case.</p>
-<p>I moved all of my sourcecode into a repository (<a href="https://github.com/xconverge/spkelly),">https://github.com/xconverge/spkelly),</a> pointed the repo to the docs/ folder and it was then publicly available! Easy. Next up was to add a CNAME record and switch to a custom domain name.</p>
+<p>I moved all of my sourcecode into a <a href="https://github.com/xconverge/spkelly">GitHub repo</a>, configured the pages repo to use the docs/ folder as the content, and it was then publicly available! Easy. Next up was to add a CNAME record and switch to a custom domain name.</p>
 <p><a href="https://www.spkelly.com">https://www.spkelly.com</a> was now reborn!</p>
 <p>Lastly, I hooked up a Cloudflare free tier account, so that the github pages content can be cached, sped up (even though the site does not have much in terms of overhead/comp), and readily available incase of outages.</p>
 <p>Another great benefit is that this solution offers SSL, so now the site can utilize HTTPS. Prior to this I needed to maintain my own SSL certificate from LetsEncrypt.</p>
