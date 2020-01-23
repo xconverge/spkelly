@@ -12,7 +12,9 @@ I first started making bread many years ago using the no knead method. It was ea
 
 [Mark Bittman's No Knead Bread](https://cooking.nytimes.com/recipes/11376-no-knead-bread)
 
-I used this recipe for years, and the loaves were always delicious and foolproof. Here is an example loaf I made using this recipe:
+![](/bread/dutchoven.jpg)
+
+I used this recipe for years, and the loaves were always delicious and foolproof. The dutch oven steams the bread as it rises for about 30 minutes, then you take the lid off for the last 15 minutes, and it gets nice and browned. Here is an example loaf I made using this recipe:
 
 ![](/bread/loaf3.jpg)
 
@@ -44,7 +46,7 @@ For other types of bread (ciabatta, challah, english muffins, bagels, cinnamon b
 
 ![](/bread/englishmuffins.jpg)
 
-![](/bread/cinnamonbuns.jpg)
+![](/bread/cinnamonbun.jpg)
 
 ![](/bread/ciabatta.jpg)
 
@@ -55,6 +57,7 @@ For other types of bread (ciabatta, challah, english muffins, bagels, cinnamon b
 ![](/bread/baguettes.jpg)
 
 Ran out of oven width.... panic ensued... hockey stick bread resulted...
+
 ![](/bread/baguettes2.jpg)
 
 ![](/bread/baguettes3.jpg)
