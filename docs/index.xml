@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://spkelly.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bread</title>
+      <link>https://spkelly.com/posts/bread/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/bread/</guid>
+      <description>This is a post that doesn&#39;t involve any computers or technology&amp;hellip; but has definitely consumed a TON of my time and effort in the past few years.
+I first started making bread many years ago using the no knead method. It was easy, 4 ingredients, and the only piece of equipment needed was a dutch oven (~$40). The bread that came out of this tasted like magic. You put some raw boring ingredients in (flour, water, salt, and some instant yeast), and out came something warm, ready for a ton of butter.</description>
+    </item>
     
     <item>
       <title>SSTV Image From ISS</title>
@@ -104,18 +114,6 @@ Vince started with the CAD. A large majority of this project was done on the tra
       
       <guid>https://spkelly.com/posts/3dprinter/</guid>
       <description>I chose the Prusa i3 (http://reprap.org/wiki/Prusa_i3) as the 3D printer I wanted to build due to it’s rigidity and amount of information online related to it. At the time of making this, 3D printing was starting to get popular but was not NEARLY as popular as it is as you read this. Kits were not as available, amazon did not sell 3D printers, so I decided to make my own from plans and forum posts found online.</description>
-    </item>
-    
-    <item>
-      <title>MobileEyes iOS App</title>
-      <link>https://spkelly.com/posts/mobileeyes/</link>
-      <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://spkelly.com/posts/mobileeyes/</guid>
-      <description>I developed this iOS application to control an Adept mobile robot platform in my free time.
-90% of this was done in hotels and airplanes while travelling for work.
-I was able to VPN to work from a Southwest plane, and connect to a mobile robot and send it to different parts of the building using XCode from 40,000 feet.
-Once I submitted the application to the Apple app store, they asked me to send them a video of the application working before they would approve it.</description>
     </item>
     
   </channel>
