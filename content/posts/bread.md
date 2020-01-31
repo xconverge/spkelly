@@ -56,9 +56,7 @@ For other types of bread (ciabatta, challah, english muffins, bagels, cinnamon b
 
 ![](/bread/baguettes.jpg)
 
-Ran out of oven width.... panic ensued... hockey stick bread resulted...
-
-![](/bread/baguettes2.jpg)
+{{< figure src="/bread/baguettes2.jpg" caption="Ran out of oven width.... panic ensued... hockey stick bread resulted..." >}}
 
 ![](/bread/baguettes3.jpg)
 
@@ -72,9 +70,7 @@ Here is some layered croissant dough. Every line is a layer of butter in between
 
 ![](/bread/croissants.jpg)
 
-A rosemary, potato foccacia...
-
-![](/bread/foccacia.jpg)
+{{< figure src="/bread/foccacia.jpg" caption="A rosemary, potato foccacia" >}}
 
 Some awesome sticky buns from [The Food Lab by J. Kenji López-Alt](https://www.amazon.com/Food-Lab-Cooking-Through-Science/dp/0393081087)
 
