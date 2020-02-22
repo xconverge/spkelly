@@ -15,17 +15,17 @@
 			<pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
 			
 			<guid>https://spkelly.com/posts/bread/</guid>
-			<description>This is a post that doesn&#39;t involve any computers or technology&amp;hellip; but has definitely consumed a TON of my time and effort in the past few years.
+			<description>This is a post that doesn&amp;rsquo;t involve any computers or technology&amp;hellip; but has definitely consumed a TON of my time and effort in the past few years.
 I first started making bread many years ago using the no knead method. It was easy, 4 ingredients, and the only piece of equipment needed was a dutch oven (~$40). The bread that came out of this tasted like magic. You put some raw boring ingredients in (flour, water, salt, and some instant yeast), and out came something warm, ready for a ton of butter.</description>
-			<content type="html"><![CDATA[<p>This is a post that doesn't involve any computers or technology&hellip; but has definitely consumed a TON of my time and effort in the past few years.</p>
+			<content type="html"><![CDATA[<p>This is a post that doesn&rsquo;t involve any computers or technology&hellip; but has definitely consumed a TON of my time and effort in the past few years.</p>
 <p>I first started making bread many years ago using the no knead method. It was easy, 4 ingredients, and the only piece of equipment needed was a dutch oven (~$40). The bread that came out of this tasted like magic. You put some raw boring ingredients in (flour, water, salt, and some instant yeast), and out came something warm, ready for a ton of butter. It was too easy to stand at the kitchen counter and eat half of a loaf of bread.</p>
-<p><a href="https://cooking.nytimes.com/recipes/11376-no-knead-bread">Mark Bittman's No Knead Bread</a></p>
+<p><a href="https://cooking.nytimes.com/recipes/11376-no-knead-bread">Mark Bittman&rsquo;s No Knead Bread</a></p>
 <p><img src="/bread/dutchoven.jpg" alt=""></p>
 <p>I used this recipe for years, and the loaves were always delicious and foolproof. The dutch oven steams the bread as it rises for about 30 minutes, then you take the lid off for the last 15 minutes, and it gets nice and browned. Here is an example loaf I made using this recipe:</p>
 <p><img src="/bread/loaf3.jpg" alt=""></p>
 <p>After a few years, I purchased some new books:</p>
 <p>#1 <a href="https://www.amazon.com/Flour-Water-Salt-Yeast-Fundamentals/dp/160774273X">Flour Water Salt Yeast by Ken Forkish</a></p>
-<p>#2 <a href="https://www.amazon.com/Bread-Bakers-Apprentice-15th-Anniversary/dp/1607748657/">The Bread Baker's Apprentice by Peter Reinhart</a></p>
+<p>#2 <a href="https://www.amazon.com/Bread-Bakers-Apprentice-15th-Anniversary/dp/1607748657/">The Bread Baker&rsquo;s Apprentice by Peter Reinhart</a></p>
 <p>And I can safely say, Ken Forkish is a genius. His book is my #1 reccomendation to people looking to get into this. I have gifted it multiple times and have converted a bunch of people to bread bakers. I get text messages nearly weekly with pictures of freshly baked loaves of bread that friends want to share with my, years after getting them hooked on bread baking.</p>
 <p>His techniques are simple, and easy to apply to all doughs moving forward. Pizza doughs, bread doughs, etc. He works with a very high hydration dough (high water content), which makes this great textured bread with tons of air pockets.</p>
 <p>There is also a lot of interesting sourdough (levain) recipes that involved a sourdough starter that lived in my fridge for some amount of time and was periodically fed more flour and water to capture the natural yeast and lactobacilli that are floating around the air all around us.</p>
@@ -35,7 +35,7 @@ I first started making bread many years ago using the no knead method. It was ea
 <p><img src="/bread/loaf5.jpg" alt=""></p>
 <p><img src="/bread/loaf6.jpg" alt=""></p>
 <p><img src="/bread/loaf7.jpg" alt=""></p>
-<p>For other types of bread (ciabatta, challah, english muffins, bagels, cinnamon buns, sticky buns, baguettes, bagels, etc) the Bread Baker's Apprentice provided a way of rounding out my bread-sperience.</p>
+<p>For other types of bread (ciabatta, challah, english muffins, bagels, cinnamon buns, sticky buns, baguettes, bagels, etc) the Bread Baker&rsquo;s Apprentice provided a way of rounding out my bread-sperience.</p>
 <p><img src="/bread/englishmuffins.jpg" alt=""></p>
 <p><img src="/bread/cinnamonbun.jpg" alt=""></p>
 <p><img src="/bread/ciabatta.jpg" alt=""></p>
@@ -83,7 +83,7 @@ A few times a year, the ISS transmits SSTV (slow-scan tv) signals with their onb
 <p>Well the blog above had an event coming up that I wanted to try and receive!</p>
 <p>&ldquo;SSTV from December 28, 2019 until January 1, 2020
 ARISS will be supporting SSTV transmissions worldwide in memory of cosmonaut Alexei Leonov. Event runs from Dec 28 (11:00 UTC is the setup time) until Jan 1, 2020 (18:20 UTC when the system is scheduled for shutdown). Transmissions should be on the standard frequency of 145.800 MHz and in the PD 120 format.&rdquo;</p>
-<p>I checked <a href="https://www.heavens-above.com/PassSummary.aspx">https://www.heavens-above.com/PassSummary.aspx</a> and found a pass that wasn't in the middle of the night (for my own sanity&hellip;)</p>
+<p>I checked <a href="https://www.heavens-above.com/PassSummary.aspx">https://www.heavens-above.com/PassSummary.aspx</a> and found a pass that wasn&rsquo;t in the middle of the night (for my own sanity&hellip;)</p>
 <p>I decided to use my SDR to record the audio transmission, so that I could post process the results after the fact and I could tweak the gain and do a bit of filtering as well if needed. I setup my dipole antenna for 145.8 MHz, tuned SDR# to 145.8 as well, and waited for the pass.</p>
 <p>SSTV is pretty interesting, it takes about 100 seconds to receive 240 lines of a colored image using frequency modulation with a pretty small bandwidth of up to 3kHz!</p>
 <p><a href="https://en.wikipedia.org/wiki/Slow-scan_television">https://en.wikipedia.org/wiki/Slow-scan_television</a></p>
@@ -117,7 +117,7 @@ I considered converting all of the posts to individual HTML pages, with a decent
 <p>Since 100% of the content is static, wordpress was overkill. For my use case, it was overcomplicated, slow-ish, and a potential security headache.</p>
 <p>I considered converting all of the posts to individual HTML pages, with a decent index.html and some minor css. Upon investigating some of the latest frameworks (jekyll, hugo, react, etc) I decided on hugo which is written in Go <a href="https://gohugo.io/">https://gohugo.io/</a>.</p>
 <p><img src="/websiteupdate/hugo.png" alt=""></p>
-<p>I chose this primarily for it's simplicity and speed for a static site. Building the site went pretty quickly, now all of my posts/projects are each a single markdown file, and adding a new project is as simple as adding a new markdown file.</p>
+<p>I chose this primarily for it&rsquo;s simplicity and speed for a static site. Building the site went pretty quickly, now all of my posts/projects are each a single markdown file, and adding a new project is as simple as adding a new markdown file.</p>
 <p>The second phase of this project was to move hosting to something free. The site is so small (&lt;100Mb) that I figured there had to be somewhere free to host it. I considered AWS free tier, but in the end went with Github Pages. I had seen quite a few .github.io pages in the past and wanted to see how straightforward it was to use for my use case.</p>
 <p>I moved all of my sourcecode into a <a href="https://github.com/xconverge/spkelly">GitHub repo</a>, configured the pages repo to use the docs/ folder as the content, and it was then publicly available! Easy. Next up was to add a CNAME record and switch to a custom domain name.</p>
 <p><a href="https://www.spkelly.com">https://www.spkelly.com</a> was now reborn!</p>
@@ -274,7 +274,7 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 			<description>Microsoft came out with an open source text editor called Visual Studio Code. The cool thing about this application was that it was cross-platform so I could move seamlessly between MacOS, Ubuntu, and Windows 10 and always be using the same editor, extensions, and environment. I will save the conversation about Electron, the framework that this application uses for another time.
 I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin.</description>
 			<content type="html"><![CDATA[<p>Microsoft came out with an open source text editor called Visual Studio Code. The cool thing about this application was that it was cross-platform so I could move seamlessly between MacOS, Ubuntu, and Windows 10 and always be using the same editor, extensions, and environment. I will save the conversation about Electron, the framework that this application uses for another time.</p>
-<p>I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin. The extension was written in TypeScript (which I didn't know at the time) but I decided to start contributing some bug fixes for issues that annoyed ME and figured I would learn typescript along the way.</p>
+<p>I started using the VSCodeVim extension to have Vim style keybindings (essential for my productivity), but found quite a few annoyances with the plugin. The extension was written in TypeScript (which I didn&rsquo;t know at the time) but I decided to start contributing some bug fixes for issues that annoyed ME and figured I would learn typescript along the way.</p>
 <p><a href="https://github.com/VSCodeVim/Vim">https://github.com/VSCodeVim/Vim</a></p>
 <p><img src="/vscodevim/vim1.png" alt=""></p>
 <p>Next thing I know I was one of the core maintainers of the extension and was contributing very often. I learned an enormous amount about open-source development, managing a community, and working with typescript. Currently, the extension has over 300,000 installs (2019 update: 7.9 million&hellip;), and using telemetry we can see that there are over 8,000 active users every day. This is pretty exciting and is cool to be shipping code to that many users.</p>
