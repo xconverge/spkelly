@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://spkelly.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GOES-17 Satellite Imagery</title>
+      <link>https://spkelly.com/posts/goes/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/goes/</guid>
+      <description>I had seen some cool pictures online of images obtained using a SDR from GOES-17, a geostationary weather satellite over the west coast of the US. There is also a complementary GOES-16 over the east coast. There are also a few other similar satellites from different countries, in different locations, and different communication protocols. Due to the quarantine for COVID-19, now seemed like a good time to stay at home and point a dish at the sky with hopes of receiving images.</description>
+    </item>
     
     <item>
       <title>Bread</title>
@@ -105,15 +114,6 @@ I then used a python based image to GCode library to convert images to GCode pat
       <description>My friend Vince and I wanted to put my new 3D printer (see previous post) to good use!
 We decided to design and build a delta style pick and place robot from scratch.
 Vince started with the CAD. A large majority of this project was done on the train to/from work. We decided on threaded rod for the parallel links, and some u-joints from McMaster-Carr for to give us some of the motion we needed.</description>
-    </item>
-    
-    <item>
-      <title>3D Printer Prusa i3</title>
-      <link>https://spkelly.com/posts/3dprinter/</link>
-      <pubDate>Mon, 15 Jul 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://spkelly.com/posts/3dprinter/</guid>
-      <description>I chose the Prusa i3 (http://reprap.org/wiki/Prusa_i3) as the 3D printer I wanted to build due to it’s rigidity and amount of information online related to it. At the time of making this, 3D printing was starting to get popular but was not NEARLY as popular as it is as you read this. Kits were not as available, amazon did not sell 3D printers, so I decided to make my own from plans and forum posts found online.</description>
     </item>
     
   </channel>

@@ -6,8 +6,129 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
 		<atom:link href="https://spkelly.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GOES-17 Satellite Imagery</title>
+			<link>https://spkelly.com/posts/goes/</link>
+			<pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://spkelly.com/posts/goes/</guid>
+			<description>I had seen some cool pictures online of images obtained using a SDR from GOES-17, a geostationary weather satellite over the west coast of the US. There is also a complementary GOES-16 over the east coast. There are also a few other similar satellites from different countries, in different locations, and different communication protocols. Due to the quarantine for COVID-19, now seemed like a good time to stay at home and point a dish at the sky with hopes of receiving images.</description>
+			<content type="html"><![CDATA[<p>I had seen some cool pictures online of images obtained using a <a href="/posts/rtlsdr">SDR</a> from <a href="https://en.wikipedia.org/wiki/GOES-17">GOES-17</a>, a geostationary weather satellite over the west coast of the US. There is also a complementary GOES-16 over the east coast. There are also a few other similar satellites from different countries, in different locations, and different communication protocols. Due to the quarantine for COVID-19, now seemed like a good time to stay at home and point a dish at the sky with hopes of receiving images.</p>
+<p>The first thing I had to do was to buy a few parts to go with my <a href="/posts/rtlsdr">SDR</a></p>
+<p><a href="https://www.amazon.com/dp/B005M8KU3W/">Premiertek 2.4ghz WiFi grid antenna ($75)</a></p>
+<p><a href="https://www.nooelec.com/store/sawbird-plus-goes.html">Nooelec GOES+ LNA and filter ($35)</a></p>
+<p>A few SMA and type-N connectors to piece it all together (~$10)</p>
+<p>Next up, I had to align the dish. I used <a href="https://www.dishpointer.com/">dishpointer</a> to get the azimuth, elevation, and skew from my current location. I then used a compass and bubble level app on my phone to set the dish up pointing in the general direction of where dishpointer told me. I knew I would refine this later as I found signal</p>
+<p>My bike repair stand makes for a GREAT adjustable dish stand&hellip;</p>
+<figure>
+    <img src="/goes/dish_aligned.jpg"
+         alt="Aligned dish"/> <figcaption>
+            <p>Aligned dish</p>
+        </figcaption>
+</figure>
+
+<p>The antenna I bought was a 2.4Ghz antenna intended for extending WiFi coverage. Since the signal from GOES-17 is 1.6941 GHz, there is a common modification that people have been doing to tune the antenna closer to this frequency. The modification is either to flip the reflector around, or install a small spacer between the reflector and the feed. I opted for a ~2.5cm spacer. This is a bit of a hack since the dipoles in the feed are still tuned for 2.4Ghz, but it is enough to work.</p>
+<figure>
+    <img src="/goes/dish_spacer.jpg"
+         alt="Spacer installed to tune antenna closer to 1.7Ghz (from 2.4Ghz)"/> <figcaption>
+            <p>Spacer installed to tune antenna closer to 1.7Ghz (from 2.4Ghz)</p>
+        </figcaption>
+</figure>
+
+<p>Then I connected up my low noise amplifier/filter combo from Nooelec, and connected it to my SDR. The LNA would be powered by the SDR which has a built in bias-t circuit to supply DC voltage.</p>
+<figure>
+    <img src="/goes/dish_connections.jpg"/> 
+</figure>
+
+<p>After a bit of toying around (a lot a bit to be honest&hellip; different spacer lengths, reflector layouts, antenna orientations, etc..)&hellip; I found the signal and it was coming in pretty clearly!</p>
+<figure>
+    <img src="/goes/waterfall.png"/> 
+</figure>
+
+<p>I then switched to Ubuntu and built/setup <a href="https://github.com/pietern/goestools">goestools</a>. Goestools is a set of tools used to receive and decode the signal from the GOES satellite. Once I configured goestools to enable the bias-t on my sdr to provide power to the LNA, I fired it up and started adjusted the antenna slightly to try and minimize the viterbi error and minimize packet drops.</p>
+<figure>
+    <img src="/goes/goesrecv.png"/> 
+</figure>
+
+<p>Once this was done, I then started up goesproc and it started processing data and saving images!</p>
+<figure>
+    <img src="/goes/goesproc.png"/> 
+</figure>
+
+<p>Here is the first thing that came in!</p>
+<figure>
+    <img src="/goes/goes17_fd_fc_first_image.jpg"
+         alt="First image!"/> <figcaption>
+            <p>First image!</p>
+        </figcaption>
+</figure>
+
+<p>Since this satellite is geostationary&hellip;I was done! I left it running for ~24 hours and stitched together the images using <a href="https://github.com/ImageMagick/ImageMagick/">ImageMagick</a> to make some nice gifs.</p>
+<figure>
+    <img src="/goes/goes17_fd_fc.gif"
+         alt="GOES-17"/> <figcaption>
+            <p>GOES-17</p>
+        </figcaption>
+</figure>
+
+<p>GOES satellites have a few imagers and some can be requested by government agencies to point at specific things for certain reasons, these 2 gifs/sets of images are 2 additional images that get produced.</p>
+<figure>
+    <img src="/goes/goes17_m1_fc.gif"
+         alt="GOES-17 M1, changed where it was pointing part of the way through"/> <figcaption>
+            <p>GOES-17 M1, changed where it was pointing part of the way through</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="/goes/goes17_m2_fc.gif"
+         alt="GOES-17 M2"/> <figcaption>
+            <p>GOES-17 M2</p>
+        </figcaption>
+</figure>
+
+<p>You can read about what it is pointed at and why here at the <a href="https://www.ospo.noaa.gov/Operations/messages.html">NOAA message list</a>.</p>
+<p>The GOES satellites also have a relay system where they relay smaller images from a few other similar satellites.</p>
+<figure>
+    <img src="/goes/goes16_fd_ch13enhanced.gif"
+         alt="NOAA GOES-16"/> <figcaption>
+            <p>NOAA GOES-16</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="/goes/himawari8_fd_ir.gif"
+         alt="Japanese Himawari-8"/> <figcaption>
+            <p>Japanese Himawari-8</p>
+        </figcaption>
+</figure>
+
+<p>I also received some National Weather Service data from the satellite&hellip;</p>
+<p><figure>
+    <img src="/goes/weather/1.gif"/> 
+</figure>
+
+<figure>
+    <img src="/goes/weather/2.gif"/> 
+</figure>
+
+<figure>
+    <img src="/goes/weather/3.gif"/> 
+</figure>
+
+<figure>
+    <img src="/goes/weather/4.gif"/> 
+</figure>
+
+<figure>
+    <img src="/goes/weather/5.gif"/> 
+</figure>
+</p>
+<p>Reading more about this specific satellite (GOES-17), it has definitely had some problems. Most notable was <a href="https://www.goes-r.gov/users/GOES-17-ABI-Performance.html">GOES-17 ABI cooling failure</a> which lead to them running reduced hours at different parts of the year to prevent the images from being over-saturated due to overheating.</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Bread</title>
