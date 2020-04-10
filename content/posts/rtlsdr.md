@@ -15,7 +15,7 @@ This is the kit I bought for $30:
 
 Then I installed some free software SDR# which allows you to tune filters and gain and install plugins.
 
-First up, I wanted to try and capture data from a NOAA satellite as it passed overhead. These satellites are constantly transmitting data/images at 137Mhz and when in range, this data can easily be received and decoded.
+First up, I wanted to try and capture data from a NOAA satellite as it passed overhead. These satellites are constantly transmitting data/images at 137MHz and when in range, this data can easily be received and decoded.
 
 I setup my antenna for this particular type of signal and frequency range using this diagram:
 ![](/rtlsdr/adams_V-dipole.png)
@@ -42,7 +42,7 @@ And then here is what was generated from the decoding of the data!
 
 ![](/rtlsdr/2019-6-29-10-29-47-795-rectified.jpg)
 
-Next I wanted to track airplanes near me using their ADS-B protocol. This is a signal coming in at 1090Mhz so this is the antenna configuration necessary:
+Next I wanted to track airplanes near me using their ADS-B protocol. This is a signal coming in at 1090MHz so this is the antenna configuration necessary:
 
 ![](/rtlsdr/antenna2.jpg)
 

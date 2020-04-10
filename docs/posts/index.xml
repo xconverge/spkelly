@@ -18,7 +18,7 @@
 			<description>I had seen some cool pictures online of images obtained using a SDR from GOES-17, a geostationary weather satellite over the west coast of the US. There is also a complementary GOES-16 over the east coast. There are also a few other similar satellites from different countries, in different locations, and different communication protocols. Due to the quarantine for COVID-19, now seemed like a good time to stay at home and point a dish at the sky with hopes of receiving images.</description>
 			<content type="html"><![CDATA[<p>I had seen some cool pictures online of images obtained using a <a href="/posts/rtlsdr">SDR</a> from <a href="https://en.wikipedia.org/wiki/GOES-17">GOES-17</a>, a geostationary weather satellite over the west coast of the US. There is also a complementary GOES-16 over the east coast. There are also a few other similar satellites from different countries, in different locations, and different communication protocols. Due to the quarantine for COVID-19, now seemed like a good time to stay at home and point a dish at the sky with hopes of receiving images.</p>
 <p>The first thing I had to do was to buy a few parts to go with my <a href="/posts/rtlsdr">SDR</a></p>
-<p><a href="https://www.amazon.com/dp/B005M8KU3W/">Premiertek 2.4ghz WiFi grid antenna ($75)</a></p>
+<p><a href="https://www.amazon.com/dp/B005M8KU3W/">Premiertek 2.4GHz WiFi grid antenna ($75)</a></p>
 <p><a href="https://www.nooelec.com/store/sawbird-plus-goes.html">Nooelec GOES+ LNA and filter ($35)</a></p>
 <p>A few SMA and type-N connectors to piece it all together (~$10)</p>
 <p>Next up, I had to align the dish. I used <a href="https://www.dishpointer.com/">dishpointer</a> to get the azimuth, elevation, and skew from my current location. I then used a compass and bubble level app on my phone to set the dish up pointing in the general direction of where dishpointer told me. I knew I would refine this later as I found signal</p>
@@ -30,11 +30,11 @@
         </figcaption>
 </figure>
 
-<p>The antenna I bought was a 2.4Ghz antenna intended for extending WiFi coverage. Since the signal from GOES-17 is 1.6941 GHz, there is a common modification that people have been doing to tune the antenna closer to this frequency. The modification is either to flip the reflector around, or install a small spacer between the reflector and the feed. I opted for a ~2.5cm spacer. This is a bit of a hack since the dipoles in the feed are still tuned for 2.4Ghz, but it is enough to work.</p>
+<p>The antenna I bought was a 2.4GHz antenna intended for extending WiFi coverage. Since the signal from GOES-17 is 1.6941 GHz, there is a common modification that people have been doing to tune the antenna closer to this frequency. The modification is either to flip the reflector around, or install a small spacer between the reflector and the feed. I opted for a ~2.5cm spacer. This is a bit of a hack since the dipoles in the feed are still tuned for 2.4GHz, but it is enough to work.</p>
 <figure>
     <img src="/goes/dish_spacer.jpg"
-         alt="Spacer installed to tune antenna closer to 1.7Ghz (from 2.4Ghz)"/> <figcaption>
-            <p>Spacer installed to tune antenna closer to 1.7Ghz (from 2.4Ghz)</p>
+         alt="Spacer installed to tune antenna closer to 1.7GHz (from 2.4GHz)"/> <figcaption>
+            <p>Spacer installed to tune antenna closer to 1.7GHz (from 2.4GHz)</p>
         </figcaption>
 </figure>
 
@@ -262,7 +262,7 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 <img src="/rtlsdr/rtlsdrkit.jpg" alt=""></p>
 <p><a href="https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B011HVUEME/">Amazon link</a></p>
 <p>Then I installed some free software SDR# which allows you to tune filters and gain and install plugins.</p>
-<p>First up, I wanted to try and capture data from a NOAA satellite as it passed overhead. These satellites are constantly transmitting data/images at 137Mhz and when in range, this data can easily be received and decoded.</p>
+<p>First up, I wanted to try and capture data from a NOAA satellite as it passed overhead. These satellites are constantly transmitting data/images at 137MHz and when in range, this data can easily be received and decoded.</p>
 <p>I setup my antenna for this particular type of signal and frequency range using this diagram:
 <img src="/rtlsdr/adams_V-dipole.png" alt=""></p>
 <p><img src="/rtlsdr/antenna.jpg" alt=""></p>
@@ -276,7 +276,7 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 <p><img src="/rtlsdr/meteor-m2_waveform.png" alt=""></p>
 <p>And then here is what was generated from the decoding of the data!</p>
 <p><img src="/rtlsdr/2019-6-29-10-29-47-795-rectified.jpg" alt=""></p>
-<p>Next I wanted to track airplanes near me using their ADS-B protocol. This is a signal coming in at 1090Mhz so this is the antenna configuration necessary:</p>
+<p>Next I wanted to track airplanes near me using their ADS-B protocol. This is a signal coming in at 1090MHz so this is the antenna configuration necessary:</p>
 <p><img src="/rtlsdr/antenna2.jpg" alt=""></p>
 <p>I ran some software called RTL1090 which uses the hardware to decode the data being received and send it via TCP to PlanePlotter which shows the planes in a visual way</p>
 <p><img src="/rtlsdr/Capture.png" alt=""></p>

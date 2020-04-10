@@ -10,7 +10,7 @@ I had seen some cool pictures online of images obtained using a [SDR](/posts/rtl
 
 The first thing I had to do was to buy a few parts to go with my [SDR](/posts/rtlsdr)
 
-[Premiertek 2.4ghz WiFi grid antenna ($75)](https://www.amazon.com/dp/B005M8KU3W/)
+[Premiertek 2.4GHz WiFi grid antenna ($75)](https://www.amazon.com/dp/B005M8KU3W/)
 
 [Nooelec GOES+ LNA and filter ($35)](https://www.nooelec.com/store/sawbird-plus-goes.html)
 
@@ -22,9 +22,9 @@ My bike repair stand makes for a GREAT adjustable dish stand...
 
 {{< figure src="/goes/dish_aligned.jpg" caption="Aligned dish" >}}
 
-The antenna I bought was a 2.4Ghz antenna intended for extending WiFi coverage. Since the signal from GOES-17 is 1.6941 GHz, there is a common modification that people have been doing to tune the antenna closer to this frequency. The modification is either to flip the reflector around, or install a small spacer between the reflector and the feed. I opted for a ~2.5cm spacer. This is a bit of a hack since the dipoles in the feed are still tuned for 2.4Ghz, but it is enough to work.
+The antenna I bought was a 2.4GHz antenna intended for extending WiFi coverage. Since the signal from GOES-17 is 1.6941 GHz, there is a common modification that people have been doing to tune the antenna closer to this frequency. The modification is either to flip the reflector around, or install a small spacer between the reflector and the feed. I opted for a ~2.5cm spacer. This is a bit of a hack since the dipoles in the feed are still tuned for 2.4GHz, but it is enough to work.
 
-{{< figure src="/goes/dish_spacer.jpg" caption="Spacer installed to tune antenna closer to 1.7Ghz (from 2.4Ghz)" >}}
+{{< figure src="/goes/dish_spacer.jpg" caption="Spacer installed to tune antenna closer to 1.7GHz (from 2.4GHz)" >}}
 
 Then I connected up my low noise amplifier/filter combo from Nooelec, and connected it to my SDR. The LNA would be powered by the SDR which has a built in bias-t circuit to supply DC voltage.
 
