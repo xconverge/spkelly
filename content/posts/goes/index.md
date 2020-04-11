@@ -44,7 +44,7 @@ Once this was done, I then started up goesproc and it started processing data an
 
 Here is the first thing that came in!
 
-{{< figure src="goes17_fd_fc_first_image.jpg" caption="First image!" >}}
+[{{< img src="goes17_fd_fc_first_image.jpg" alt="First image!" >}}](goes17_fd_fc_first_image.jpg)
 
 Since this satellite is geostationary...I was done! I left it running for ~24 hours and stitched together the images using [ImageMagick](https://github.com/ImageMagick/ImageMagick/) to make some nice gifs.
 

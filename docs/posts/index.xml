@@ -59,13 +59,52 @@
 </figure>
 
 <p>Here is the first thing that came in!</p>
-<figure>
-    <img src="goes17_fd_fc_first_image.jpg"
-         alt="First image!"/> <figcaption>
-            <p>First image!</p>
-        </figcaption>
-</figure>
+<p><a href="goes17_fd_fc_first_image.jpg">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img 
+  sizes="(min-width: 35em) 1200px, 100vw"
+  srcset='
+  
+    /posts/goes/goes17_fd_fc_first_image_hu2684e5080fee514dce5cd5da7649a169_13874186_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /posts/goes/goes17_fd_fc_first_image_hu2684e5080fee514dce5cd5da7649a169_13874186_800x0_resize_q75_box.jpg 800w
+  
+  
+    , /posts/goes/goes17_fd_fc_first_image_hu2684e5080fee514dce5cd5da7649a169_13874186_1200x0_resize_q75_box.jpg 1200w
+  
+  
+    , /posts/goes/goes17_fd_fc_first_image_hu2684e5080fee514dce5cd5da7649a169_13874186_1500x0_resize_q75_box.jpg 1500w 
+  '
+  
+    src="/posts/goes/goes17_fd_fc_first_image.jpg" 
+  
+  alt="First image!"></a></p>
 <p>Since this satellite is geostationary&hellip;I was done! I left it running for ~24 hours and stitched together the images using <a href="https://github.com/ImageMagick/ImageMagick/">ImageMagick</a> to make some nice gifs.</p>
 <figure>
     <img src="goes17_fd_fc.gif"
