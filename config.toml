@@ -4,22 +4,19 @@ defaultContentLanguage = "en"
 title = "Sean Kelly"
 theme = "hermit"
 publishDir = "docs"
-# enableGitInfo = true
+enableGitInfo = false
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 rssLimit = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
-googleAnalytics = "UA-145866992-1"
-# disqusShortname = "yourdiscussshortname"
+googleAnalytics = ""
 
 [author]
   name = "Sean Kelly"
 
-[blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
+[markup.goldmark.renderer]
+  unsafe = true
 
 [taxonomies]
   tag = "tags"
@@ -42,7 +39,7 @@ googleAnalytics = "UA-145866992-1"
   # bgImg = ""  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/username/repository/commit/"
+  gitUrl = "https://github.com/xconverge/spkelly/commit/"
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
   justifyContent = false  # Set "text-align: justify" to `.content`.
