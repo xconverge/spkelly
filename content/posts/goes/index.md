@@ -66,15 +66,10 @@ The GOES satellites also have a relay system where they relay smaller images fro
 
 I also received some National Weather Service data from the satellite...
 
-{{< figure src="weather1.gif" caption="" >}}
-<br>
-{{< figure src="weather2.gif" caption="" >}}
-<br>
-{{< figure src="weather3.gif" caption="" >}}
-<br>
-{{< figure src="weather4.gif" caption="" >}}
-<br>
-{{< figure src="weather5.gif" caption="" >}}
-<br>
+{{< figure src="weather1.gif" caption="" >}}  
+{{< figure src="weather2.gif" caption="" >}}  
+{{< figure src="weather3.gif" caption="" >}}  
+{{< figure src="weather4.gif" caption="" >}}  
+{{< figure src="weather5.gif" caption="" >}}  
 
 Reading more about this specific satellite (GOES-17), it has definitely had some problems. Most notable was [GOES-17 ABI cooling failure](https://www.goes-r.gov/users/GOES-17-ABI-Performance.html) which lead to them running reduced hours at different parts of the year to prevent the images from being over-saturated due to overheating.
