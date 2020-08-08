@@ -61,23 +61,3 @@ const hideImg = () => {
 const toggleToc = () => {
   document.getElementById('toc').classList.toggle('show-toc');
 }
-
-
-if (header !== null) {
-  listen('#menu-btn', "click", toggleMobileMenu);
-  listen('#toc-btn', "click", toggleToc);
-  listen('#img-btn', "click", showImg);
-  listen('.bg-img', "click", hideImg);
-
-  document.querySelectorAll('.post-year').forEach((ele)=> {
-    ele.addEventListener('click', () => {
-      window.location.hash = '#' + ele.id;
-    });
-  });
-
-  window.addEventListener('scroll', throttle(() => {
-    if (mobileMenuVisible == true) {
-      toggleMobileMenu();
-    }
-  }, 250));
-}
