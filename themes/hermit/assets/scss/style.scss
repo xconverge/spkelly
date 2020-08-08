@@ -285,32 +285,6 @@ table {
   cursor: pointer;
 }
 
-#menu-btn {
-  display: none;
-  margin-left: .6em;
-  cursor: pointer;
-}
-
-#mobile-menu {
-  position: fixed;
-  bottom: 4.8em;
-  right: 1.5em;
-  display: none;
-  padding: .6em 1.8em;
-  z-index: 1;
-  box-sizing: border-box;
-  box-shadow: -1px -2px 3px 0px rgba(0, 0, 0, 0.45);
-  background-color: $dark-grey;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    line-height: 2;
-    font-size: 1.2em;
-  }
-}
-
 #site-footer {
   text-align: center;
   font-size: .9em;
@@ -872,10 +846,6 @@ a.footnote-ref {
     display: none;
   }
 
-  #menu-btn {
-    display: inline-block;
-  }
-
   .posts-group {
     display: block;
 
@@ -905,9 +875,5 @@ a.footnote-ref {
 
   hr.post-end {
     width: 60%;
-  }
-
-  #mobile-menu {
-    right: 1.2em;
   }
 }
