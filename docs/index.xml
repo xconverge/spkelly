@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://spkelly.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://spkelly.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GOES-17 Satellite Imagery</title>
       <link>https://spkelly.com/posts/goes/</link>
