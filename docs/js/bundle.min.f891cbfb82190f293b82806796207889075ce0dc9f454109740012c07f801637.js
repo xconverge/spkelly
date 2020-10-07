@@ -1,0 +1,8 @@
+const throttle=(callback,limit)=>{let timeoutHandler=null;return()=>{if(timeoutHandler==null){timeoutHandler=setTimeout(()=>{callback();timeoutHandler=null;},limit);}};};const listen=(ele,e,callback)=>{if(document.querySelector(ele)!==null){document.querySelector(ele).addEventListener(e,callback);}}
+const showImg=()=>{document.querySelector('.bg-img').classList.add('show-bg-img');}
+const hideImg=()=>{document.querySelector('.bg-img').classList.remove('show-bg-img');}
+const toggleToc=()=>{document.getElementById('toc').classList.toggle('show-toc');};(function(){'use strict';if(!document.queryCommandSupported('copy')){return;}
+function flashCopyMessage(el,msg){el.textContent=msg;setTimeout(function(){el.textContent="Copy";},1000);}
+function selectText(node){var selection=window.getSelection();var range=document.createRange();range.selectNodeContents(node);selection.removeAllRanges();selection.addRange(range);return selection;}
+function addCopyButton(containerEl){var copyBtn=document.createElement("button");copyBtn.className="highlight-copy-btn";copyBtn.textContent="Copy";var codeEl=containerEl.firstElementChild;copyBtn.addEventListener('click',function(){try{var selection=selectText(codeEl);document.execCommand('copy');selection.removeAllRanges();flashCopyMessage(copyBtn,'Copied!')}catch(e){console&&console.log(e);flashCopyMessage(copyBtn,'Failed :\'(')}});containerEl.appendChild(copyBtn);}
+var highlightBlocks=document.getElementsByClassName('highlight');Array.prototype.forEach.call(highlightBlocks,addCopyButton);})();
