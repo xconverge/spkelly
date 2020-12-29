@@ -12,7 +12,7 @@
 I started running Home Assistant on my server in a docker container. This allows me to script event based actions based on state changes from sensors. Doors opening/closing, detecting I am home by seeing my phone on wifi, turning lights on and off at certain times or based on certain things, etc.">
 <meta itemprop="datePublished" content="2020-12-28T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-12-28T00:00:00+00:00" />
-<meta itemprop="wordCount" content="397">
+<meta itemprop="wordCount" content="401">
 
 
 
@@ -70,7 +70,8 @@ I started running Home Assistant on my server in a docker container. This allows
 				<p>I have one of these old security systems from a previous decade. The company does not even exist anymore. I figured the sensors were still good though so I wanted to see if I could repurpose them.</p>
 <p><img src="security_before.jpg" alt=""></p>
 <p>I started running <a href="https://www.home-assistant.io/">Home Assistant</a> on my server in a docker container. This allows me to script event based actions based on state changes from sensors. Doors opening/closing, detecting I am home by seeing my phone on wifi, turning lights on and off at certain times or based on certain things, etc. I already had my thermostat and a few off the shelf smart switches integrated and now it was time to add these new sensors from the security system.</p>
-<p>I purchased an ESP8266 based <a href="https://www.amazon.com/KeeYees-Internet-Development-Wireless-Compatible/dp/B07PR9T5R5/">NodeMCU</a> devkit. This is a pretty awesome little device for $5. It gets you a microcontroller with wifi for super cheap and no work.</p>
+<p>I purchased an ESP8266 based <a href="https://www.amazon.com/KeeYees-Internet-Development-Wireless-Compatible/dp/B07PR9T5R5/">NodeMCU</a> devkit. This is a pretty awesome little device, for $5, you get a microcontroller with wifi and a bunch of other features right out of the box.</p>
+<p><img src="nodemcu.jpg" alt=""></p>
 <p>I installed <a href="https://esphome.io/">https://esphome.io/</a> onto the NodeMCU, this allows you to customize and publish events (sensors changing) to be consumed by another service, in my case, Home Assistant.</p>
 <p>I then wired up my sensors from the ancient security system to the NodeMCU GPIO pins and configured them in esphome to use the internal pullup resistors. My entire esphome config looks like this:</p>
 <pre><code>esphome:

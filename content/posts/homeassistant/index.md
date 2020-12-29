@@ -12,7 +12,9 @@ I have one of these old security systems from a previous decade. The company doe
 
 I started running [Home Assistant](https://www.home-assistant.io/) on my server in a docker container. This allows me to script event based actions based on state changes from sensors. Doors opening/closing, detecting I am home by seeing my phone on wifi, turning lights on and off at certain times or based on certain things, etc. I already had my thermostat and a few off the shelf smart switches integrated and now it was time to add these new sensors from the security system.
 
-I purchased an ESP8266 based [NodeMCU](https://www.amazon.com/KeeYees-Internet-Development-Wireless-Compatible/dp/B07PR9T5R5/) devkit. This is a pretty awesome little device for $5. It gets you a microcontroller with wifi for super cheap and no work.
+I purchased an ESP8266 based [NodeMCU](https://www.amazon.com/KeeYees-Internet-Development-Wireless-Compatible/dp/B07PR9T5R5/) devkit. This is a pretty awesome little device, for $5, you get a microcontroller with wifi and a bunch of other features right out of the box.
+
+![](nodemcu.jpg)
 
 I installed https://esphome.io/ onto the NodeMCU, this allows you to customize and publish events (sensors changing) to be consumed by another service, in my case, Home Assistant.
 
