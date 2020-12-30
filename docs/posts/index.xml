@@ -24,57 +24,57 @@ I started running Home Assistant on my server in a docker container. This allows
 <p><img src="nodemcu.jpg" alt=""></p>
 <p>I installed <a href="https://esphome.io/">https://esphome.io/</a> onto the NodeMCU, this allows you to customize and publish events (sensors changing) to be consumed by another service, in my case, Home Assistant.</p>
 <p>I then wired up my sensors from the ancient security system to the NodeMCU GPIO pins and configured them in esphome to use the internal pullup resistors. My entire esphome config looks like this:</p>
-<pre><code>esphome:
-  name: security
-  platform: ESP8266
-  board: nodemcuv2
-
-binary_sensor:
-  - platform: gpio
-    name: &quot;Garage Main Door&quot;
-    pin:
-      number: D1
-      mode: INPUT_PULLUP
-    device_class: door
-  - platform: gpio
-    name: &quot;Front Door&quot;
-    pin:
-      number: D2
-      mode: INPUT_PULLUP
-    device_class: door
-  - platform: gpio
-    name: &quot;Back Door&quot;
-    pin:
-      number: D5
-      mode: INPUT_PULLUP
-    device_class: door
-  - platform: gpio
-    name: &quot;Garage Back Door&quot;
-    pin:
-      number: D6
-      mode: INPUT_PULLUP
-    device_class: door
-
-wifi:
-  ssid: &quot;******&quot;
-  password: &quot;******&quot;
-
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: &quot;Security Fallback Hotspot&quot;
-    password: &quot;******&quot;
-
-captive_portal:
-
-# Enable logging
-logger:
-
-# Enable Home Assistant API
-api:
-
-ota:
-
-</code></pre><p>I power it with a usb adapter, here is what the wiring and mounting looks like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">esphome</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">security</span><span class="w">
+</span><span class="w">  </span><span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="l">ESP8266</span><span class="w">
+</span><span class="w">  </span><span class="nt">board</span><span class="p">:</span><span class="w"> </span><span class="l">nodemcuv2</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">binary_sensor</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="l">gpio</span><span class="w">
+</span><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Garage Main Door&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">pin</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">number</span><span class="p">:</span><span class="w"> </span><span class="l">D1</span><span class="w">
+</span><span class="w">      </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l">INPUT_PULLUP</span><span class="w">
+</span><span class="w">    </span><span class="nt">device_class</span><span class="p">:</span><span class="w"> </span><span class="l">door</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="l">gpio</span><span class="w">
+</span><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Front Door&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">pin</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">number</span><span class="p">:</span><span class="w"> </span><span class="l">D2</span><span class="w">
+</span><span class="w">      </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l">INPUT_PULLUP</span><span class="w">
+</span><span class="w">    </span><span class="nt">device_class</span><span class="p">:</span><span class="w"> </span><span class="l">door</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="l">gpio</span><span class="w">
+</span><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Back Door&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">pin</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">number</span><span class="p">:</span><span class="w"> </span><span class="l">D5</span><span class="w">
+</span><span class="w">      </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l">INPUT_PULLUP</span><span class="w">
+</span><span class="w">    </span><span class="nt">device_class</span><span class="p">:</span><span class="w"> </span><span class="l">door</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="l">gpio</span><span class="w">
+</span><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Garage Back Door&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">pin</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">number</span><span class="p">:</span><span class="w"> </span><span class="l">D6</span><span class="w">
+</span><span class="w">      </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l">INPUT_PULLUP</span><span class="w">
+</span><span class="w">    </span><span class="nt">device_class</span><span class="p">:</span><span class="w"> </span><span class="l">door</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">wifi</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">ssid</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;******&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;******&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w">  </span><span class="c"># Enable fallback hotspot (captive portal) in case wifi connection fails</span><span class="w">
+</span><span class="w">  </span><span class="nt">ap</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">ssid</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Security Fallback Hotspot&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;******&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">captive_portal</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Enable logging</span><span class="w">
+</span><span class="w"></span><span class="nt">logger</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Enable Home Assistant API</span><span class="w">
+</span><span class="w"></span><span class="nt">api</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">ota</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span></code></pre></div><p>I power it with a usb adapter, here is what the wiring and mounting looks like:</p>
 <p><img src="security_after1.jpg" alt=""></p>
 <p>I reused one of the old enclosures from the security system and popped a ziptie in to get the wiring all nice.</p>
 <p><img src="security_after2.jpg" alt=""></p>
@@ -448,62 +448,62 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 <p>The final part of this project was to take all of this newfound power and synchronize usage of the devices in a way that automated the original methods for reconditioning the batteries.</p>
 <p>I created what I called the workflow controller. I wanted a way to input a formula or series of steps and press GO. I wanted steps like charge with x settings, sleep for 10 minutes, discharge with x settings, sleep for 10 minutes.</p>
 <p>I decided to use yaml and yaml-cpp for its relative ease of use. I added the yaml-cpp dependency and came up with a schema I wanted to use. A valid workflow looks something like this:</p>
-<pre><code>- type: charge
-  voltage: 20
-  current: 10
-  deltav: 1
-  timeout: 1
-  maxvoltage: 300
-
-- type: wait
-  timeout: 1
-
-- type: discharge
-  current: -1
-  power: 400
-  dropthresholdvoltage: 0.5
-  dropthresholdtime: 1.0
-  timeout: 1
-  minvoltage: 10.4
-
-- type: wait
-  timeout: 1
-
-- type: charge
-  voltage: 40
-  current: 20
-  deltav: 3
-  timeout: 1
-  maxvoltage: 300
-
-- type: charge
-  voltage: 20
-  current: 10
-  deltav: 1
-  timeout: 1
-  maxvoltage: 300
- 
-- type: wait
-  timeout: 1
- 
-- type: discharge
-  current: -1
-  power: 400
-  dropthresholdvoltage: 0.5
-  dropthresholdtime: 1.0
-  timeout: 1
-  minvoltage: 10.4
- 
-- type: wait
-  timeout: 1
- 
-- type: charge
-  voltage: 40
-  current: 20
-  deltav: 3
-  timeout: 1
-  maxvoltage: 300
-</code></pre><p>I would then load this file, and parse it into a vector of SequenceCommands with the applicable settings. I then created a thread that when started, will tick every 10ms, check the state of all inputs, and increment to the next command or step of the sequence if certain criteria were met.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+</span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">maxvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">wait</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">discharge</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span>-<span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">power</span><span class="p">:</span><span class="w"> </span><span class="m">400</span><span class="w">
+</span><span class="w">  </span><span class="nt">dropthresholdvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">0.5</span><span class="w">
+</span><span class="w">  </span><span class="nt">dropthresholdtime</span><span class="p">:</span><span class="w"> </span><span class="m">1.0</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">minvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">10.4</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">wait</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+</span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">40</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">maxvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+</span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">maxvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w"> 
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">wait</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w"> 
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">discharge</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span>-<span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">power</span><span class="p">:</span><span class="w"> </span><span class="m">400</span><span class="w">
+</span><span class="w">  </span><span class="nt">dropthresholdvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">0.5</span><span class="w">
+</span><span class="w">  </span><span class="nt">dropthresholdtime</span><span class="p">:</span><span class="w"> </span><span class="m">1.0</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">minvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">10.4</span><span class="w">
+</span><span class="w"> 
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">wait</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w"> 
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+</span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">40</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">maxvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span></code></pre></div><p>I would then load this file, and parse it into a vector of SequenceCommands with the applicable settings. I then created a thread that when started, will tick every 10ms, check the state of all inputs, and increment to the next command or step of the sequence if certain criteria were met.</p>
 <p>Whether charging, discharging, or sleeping, a timeout was active which if reached would consider the step done and move on (after turning off all devices in use). When charging a voltage and current were set and sent to the PSU, then the voltage was monitored for a charge complete scenario. When discharging, you can either use power or constant current modes, and again the voltage is monitored for a discharge or minimum voltage scenario.</p>
 <p><img src="workflow.png" alt="Example workflow loaded"></p>
 <p>The end result is the ability to put a new battery cell or pack onto the rig, hook everything up, load a sequence, press “Start”, and come back in several hours later with a completed cycle!</p>

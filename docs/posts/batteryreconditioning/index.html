@@ -11,7 +11,7 @@
 <meta itemprop="description" content="Recently I came across a project where someone was using an off the shelf digital multimeter, power supply, and electronic load to recondition hybrid batteries. This involved disassembling the full pack of cells, testing, removing, and replacing bad cells, replacing contacts, etc, before doing multiple charge and discharge cycles to verify the improvement and condition of the battery. To charge, the power supply was turned on while logging with the DMM, to discharge, the eload was used in various modes (constant current, constant power) to quantify the capacity of the cell or pack of cells.">
 <meta itemprop="datePublished" content="2017-09-11T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2017-09-11T00:00:00+00:00" />
-<meta itemprop="wordCount" content="985">
+<meta itemprop="wordCount" content="893">
 
 
 
@@ -95,62 +95,62 @@
 <p>The final part of this project was to take all of this newfound power and synchronize usage of the devices in a way that automated the original methods for reconditioning the batteries.</p>
 <p>I created what I called the workflow controller. I wanted a way to input a formula or series of steps and press GO. I wanted steps like charge with x settings, sleep for 10 minutes, discharge with x settings, sleep for 10 minutes.</p>
 <p>I decided to use yaml and yaml-cpp for its relative ease of use. I added the yaml-cpp dependency and came up with a schema I wanted to use. A valid workflow looks something like this:</p>
-<pre><code>- type: charge
-  voltage: 20
-  current: 10
-  deltav: 1
-  timeout: 1
-  maxvoltage: 300
-
-- type: wait
-  timeout: 1
-
-- type: discharge
-  current: -1
-  power: 400
-  dropthresholdvoltage: 0.5
-  dropthresholdtime: 1.0
-  timeout: 1
-  minvoltage: 10.4
-
-- type: wait
-  timeout: 1
-
-- type: charge
-  voltage: 40
-  current: 20
-  deltav: 3
-  timeout: 1
-  maxvoltage: 300
-
-- type: charge
-  voltage: 20
-  current: 10
-  deltav: 1
-  timeout: 1
-  maxvoltage: 300
- 
-- type: wait
-  timeout: 1
- 
-- type: discharge
-  current: -1
-  power: 400
-  dropthresholdvoltage: 0.5
-  dropthresholdtime: 1.0
-  timeout: 1
-  minvoltage: 10.4
- 
-- type: wait
-  timeout: 1
- 
-- type: charge
-  voltage: 40
-  current: 20
-  deltav: 3
-  timeout: 1
-  maxvoltage: 300
-</code></pre><p>I would then load this file, and parse it into a vector of SequenceCommands with the applicable settings. I then created a thread that when started, will tick every 10ms, check the state of all inputs, and increment to the next command or step of the sequence if certain criteria were met.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+</span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">maxvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">wait</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">discharge</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span>-<span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">power</span><span class="p">:</span><span class="w"> </span><span class="m">400</span><span class="w">
+</span><span class="w">  </span><span class="nt">dropthresholdvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">0.5</span><span class="w">
+</span><span class="w">  </span><span class="nt">dropthresholdtime</span><span class="p">:</span><span class="w"> </span><span class="m">1.0</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">minvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">10.4</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">wait</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+</span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">40</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">maxvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+</span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">maxvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w"> 
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">wait</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w"> 
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">discharge</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span>-<span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">power</span><span class="p">:</span><span class="w"> </span><span class="m">400</span><span class="w">
+</span><span class="w">  </span><span class="nt">dropthresholdvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">0.5</span><span class="w">
+</span><span class="w">  </span><span class="nt">dropthresholdtime</span><span class="p">:</span><span class="w"> </span><span class="m">1.0</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">minvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">10.4</span><span class="w">
+</span><span class="w"> 
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">wait</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w"> 
+</span><span class="w"></span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+</span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">40</span><span class="w">
+</span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">maxvoltage</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span></code></pre></div><p>I would then load this file, and parse it into a vector of SequenceCommands with the applicable settings. I then created a thread that when started, will tick every 10ms, check the state of all inputs, and increment to the next command or step of the sequence if certain criteria were met.</p>
 <p>Whether charging, discharging, or sleeping, a timeout was active which if reached would consider the step done and move on (after turning off all devices in use). When charging a voltage and current were set and sent to the PSU, then the voltage was monitored for a charge complete scenario. When discharging, you can either use power or constant current modes, and again the voltage is monitored for a discharge or minimum voltage scenario.</p>
 <p><img src="workflow.png" alt="Example workflow loaded"></p>
 <p>The end result is the ability to put a new battery cell or pack onto the rig, hook everything up, load a sequence, press “Start”, and come back in several hours later with a completed cycle!</p>

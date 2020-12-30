@@ -20,7 +20,7 @@ I installed https://esphome.io/ onto the NodeMCU, this allows you to customize a
 
 I then wired up my sensors from the ancient security system to the NodeMCU GPIO pins and configured them in esphome to use the internal pullup resistors. My entire esphome config looks like this:
 
-```
+```yaml
 esphome:
   name: security
   platform: ESP8266

@@ -55,7 +55,7 @@ The final part of this project was to take all of this newfound power and synchr
 I created what I called the workflow controller. I wanted a way to input a formula or series of steps and press GO. I wanted steps like charge with x settings, sleep for 10 minutes, discharge with x settings, sleep for 10 minutes.
 
 I decided to use yaml and yaml-cpp for its relative ease of use. I added the yaml-cpp dependency and came up with a schema I wanted to use. A valid workflow looks something like this:
-```
+```yaml
 - type: charge
   voltage: 20
   current: 10
