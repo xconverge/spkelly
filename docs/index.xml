@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 28 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://spkelly.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://spkelly.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Espresso PID Temperature Control</title>
+      <link>https://spkelly.com/posts/gaggiapid/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://spkelly.com/posts/gaggiapid/</guid>
+      <description>During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&amp;hellip;
+I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&amp;hellip;hence this post&amp;hellip;).</description>
+    </item>
+    
     <item>
       <title>Automation with Home Assistant</title>
       <link>https://spkelly.com/posts/homeassistant/</link>
@@ -98,17 +108,6 @@ I started using the VSCodeVim extension to have Vim style keybindings (essential
       <description>https://github.com/xconverge/SmokerController
 I wanted a smoker so I chose the Weber Smokey Mountain! I got the 22″ version so that I can load it with a few racks of ribs with no issues.
 This smoker uses charcoal as the heat source. Out of the box, you control the burn rate using vents on the bottom of the unit, with properly spread and lit charcoal, you can sustain 230 degrees for 7 or 8 hours with no problems before needing to add more fuel.</description>
-    </item>
-    
-    <item>
-      <title>Drawing Robot</title>
-      <link>https://spkelly.com/posts/drawingrobot/</link>
-      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://spkelly.com/posts/drawingrobot/</guid>
-      <description>This was a quick Friday afternoon project that turned into a demo of precise machine control for dispensing applications.
-I wrote a GCode interpreter in C# that converts GCode to V+ which was used to control the Adept robot with the marker on the end. GCode is a language commonly used in machining and CNC primarily.
-I then used a python based image to GCode library to convert images to GCode paths.</description>
     </item>
     
   </channel>

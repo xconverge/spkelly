@@ -6,8 +6,57 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 28 Dec 2020 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate>
 		<atom:link href="https://spkelly.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Espresso PID Temperature Control</title>
+			<link>https://spkelly.com/posts/gaggiapid/</link>
+			<pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+			
+			<guid>https://spkelly.com/posts/gaggiapid/</guid>
+			<description>During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&amp;hellip;
+I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&amp;hellip;hence this post&amp;hellip;).</description>
+			<content type="html"><![CDATA[<p>During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&hellip;</p>
+<p>I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;).</p>
+<p><img src="gaggiaclassic.jpg" alt=""></p>
+<p>The first adjustment I made was lowering the pressure of the pump from the factory ~14 bar to a more appropriate ~9 bar which is standard for espresso. They come configured higher to work with expensive ESE pods which I do not use/need since I have a suitable espresso grinder and prefer to grind my coffee fresh.</p>
+<p>This modification consisted of switching out a spring in the over pressure valve with a known good spring from other coffee enthusasts.</p>
+<p>A few months later, there was one last change I wanted to make, stable temperature control.</p>
+<p>The Gaggia has a small boiler to heat the water up and a pump to push it through the coffee. Prior to this modification, the heater to the boiler would cycle on and off every ~4 minutes using a thermostat set to ~200 degrees F. This meant that the temperature would drop to 199, and the heater would turn on for a few seconds, causing the temp to rise on an upward curve towards 220+, and then it would slowly drop again over ~4 minutes and the cycle would repeat. This makes it difficult to pull a consistent espresso shot, so I decided to swap out the thermostat with some hardware and software to keep the temperature stable at a desired temperature.</p>
+<p>Here is what the original schematic of the Gaggia Classic looks like:</p>
+<p><img src="schematic.png" alt=""></p>
+<p>The goal is to replace #4 in the diagram, the brewing thermostat, with a relay, that can be controlled based in information from a thermocouple mounted to the boiler.</p>
+<p>So the hardware I bought:</p>
+<ul>
+<li>PT100 RTD thermocouple M4 threads - $8 from Aliexpress</li>
+<li>40A Solid State Relay - $12 from Amazon</li>
+<li>Wemos D1 ESP8266 - $4 from Amazon</li>
+<li>Adafruit PT100 RTD Amplifier MAX31865 - $15 from Adafruit</li>
+<li>HLK-PM03 120v AC to 3.3v DC power supply - $7 from Amazon</li>
+</ul>
+<p>I also needed some protoboard, spade connectors, and hookup wire (some heavier gauge since some will be 120v AC)</p>
+<p>Here is how the hardware stacks up on the protoboard. There is definitely some room inside the machine, so this should not pose any issues, but we will get to that later!</p>
+<p><img src="circuit_1.jpg" alt=""></p>
+<p><img src="circuit_2.jpg" alt=""></p>
+<p>Here is the unmodified machine, the open area is where I will be targeting the install, however there is a funnel that runs through that area that takes up some amount of space that I should be aware of.</p>
+<p><img src="unmodified.jpg" alt=""></p>
+<p>On to the software running on the ESP8266&hellip;</p>
+<p>The source code can be found at <a href="https://github.com/xconverge/gaggia-pid">https://github.com/xconverge/gaggia-pid</a></p>
+<p>The features implemented in under 500 lines are:</p>
+<ul>
+<li>Connects to wifi to allow for interfacing with the device (instead of having a screen or additional buttons)</li>
+<li>RESTful API for getting stats, setting the desired temperature, and tuning the PID parameters</li>
+<li>MQTT publishing of stats (runtime, temperature, etc.)</li>
+<li>EEPROM read/write for storage of PID parameters and desired temperature</li>
+<li>Reading of RTD temp sensor via SPI</li>
+<li>PID control of a SSR</li>
+<li>PID autotuning library to get starter/baseline tuning</li>
+<li>Cutoff temperature to disable PID control incase something goes wrong</li>
+</ul>
+<p>Now it was time to assemble and test&hellip;</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Automation with Home Assistant</title>

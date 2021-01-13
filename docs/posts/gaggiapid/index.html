@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Espresso PID Temperature Control">
+<meta itemprop="description" content="During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&hellip;
+I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;).">
+<meta itemprop="datePublished" content="2021-01-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-01-10T00:00:00+00:00" />
+<meta itemprop="wordCount" content="587">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta property="og:title" content="Espresso PID Temperature Control" />
+<meta property="og:description" content="During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&hellip;
+I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://spkelly.com/posts/gaggiapid/" />
+<meta property="article:published_time" content="2021-01-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-10T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Espresso PID Temperature Control"/>
+<meta name="twitter:description" content="During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&hellip;
+I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;)."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Espresso PID Temperature Control</title>
+	<link rel="stylesheet" href="https://spkelly.com/css/style.min.7c6062926e9635ac0905f7b02fe6b595af7648c45caf9d8f4308b6bff466fc27.css" integrity="sha256-fGBikm6WNawJBfewL+a1la92SMRcr52PQwi2v/Rm/Cc=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://spkelly.com">Sean Kelly</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://spkelly.com/posts/">Projects</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://www.linkedin.com/in/seankellyyy/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/xconverge" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="mailto:sean@spkelly.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a></span></div>
+		</div>
+	</header>
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Jan 10, 2021</span></div>
+				<h1>Espresso PID Temperature Control</h1>
+			</header>
+			<div class="content">
+				<p>During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&hellip;</p>
+<p>I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;).</p>
+<p><img src="gaggiaclassic.jpg" alt=""></p>
+<p>The first adjustment I made was lowering the pressure of the pump from the factory ~14 bar to a more appropriate ~9 bar which is standard for espresso. They come configured higher to work with expensive ESE pods which I do not use/need since I have a suitable espresso grinder and prefer to grind my coffee fresh.</p>
+<p>This modification consisted of switching out a spring in the over pressure valve with a known good spring from other coffee enthusasts.</p>
+<p>A few months later, there was one last change I wanted to make, stable temperature control.</p>
+<p>The Gaggia has a small boiler to heat the water up and a pump to push it through the coffee. Prior to this modification, the heater to the boiler would cycle on and off every ~4 minutes using a thermostat set to ~200 degrees F. This meant that the temperature would drop to 199, and the heater would turn on for a few seconds, causing the temp to rise on an upward curve towards 220+, and then it would slowly drop again over ~4 minutes and the cycle would repeat. This makes it difficult to pull a consistent espresso shot, so I decided to swap out the thermostat with some hardware and software to keep the temperature stable at a desired temperature.</p>
+<p>Here is what the original schematic of the Gaggia Classic looks like:</p>
+<p><img src="schematic.png" alt=""></p>
+<p>The goal is to replace #4 in the diagram, the brewing thermostat, with a relay, that can be controlled based in information from a thermocouple mounted to the boiler.</p>
+<p>So the hardware I bought:</p>
+<ul>
+<li>PT100 RTD thermocouple M4 threads - $8 from Aliexpress</li>
+<li>40A Solid State Relay - $12 from Amazon</li>
+<li>Wemos D1 ESP8266 - $4 from Amazon</li>
+<li>Adafruit PT100 RTD Amplifier MAX31865 - $15 from Adafruit</li>
+<li>HLK-PM03 120v AC to 3.3v DC power supply - $7 from Amazon</li>
+</ul>
+<p>I also needed some protoboard, spade connectors, and hookup wire (some heavier gauge since some will be 120v AC)</p>
+<p>Here is how the hardware stacks up on the protoboard. There is definitely some room inside the machine, so this should not pose any issues, but we will get to that later!</p>
+<p><img src="circuit_1.jpg" alt=""></p>
+<p><img src="circuit_2.jpg" alt=""></p>
+<p>Here is the unmodified machine, the open area is where I will be targeting the install, however there is a funnel that runs through that area that takes up some amount of space that I should be aware of.</p>
+<p><img src="unmodified.jpg" alt=""></p>
+<p>On to the software running on the ESP8266&hellip;</p>
+<p>The source code can be found at <a href="https://github.com/xconverge/gaggia-pid">https://github.com/xconverge/gaggia-pid</a></p>
+<p>The features implemented in under 500 lines are:</p>
+<ul>
+<li>Connects to wifi to allow for interfacing with the device (instead of having a screen or additional buttons)</li>
+<li>RESTful API for getting stats, setting the desired temperature, and tuning the PID parameters</li>
+<li>MQTT publishing of stats (runtime, temperature, etc.)</li>
+<li>EEPROM read/write for storage of PID parameters and desired temperature</li>
+<li>Reading of RTD temp sensor via SPI</li>
+<li>PID control of a SSR</li>
+<li>PID autotuning library to get starter/baseline tuning</li>
+<li>Cutoff temperature to disable PID control incase something goes wrong</li>
+</ul>
+<p>Now it was time to assemble and test&hellip;</p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://spkelly.com/posts/homeassistant/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Automation with Home Assistant</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+
+
+
+	<script src="https://spkelly.com/js/bundle.min.f891cbfb82190f293b82806796207889075ce0dc9f454109740012c07f801637.js" integrity="sha256-+JHL+4IZDyk7goBnliB4iQdc4NyfRUEJdAASwH+AFjc=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
