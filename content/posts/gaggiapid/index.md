@@ -41,3 +41,24 @@ Here is how the hardware stacks up on the protoboard. There is definitely some r
 ![](circuit_1.jpg)
 
 ![](circuit_2.jpg)
+
+Here is the unmodified machine, the open area is where I will be targeting the install, however there is a funnel that runs through that area that takes up some amount of space that I should be aware of.
+
+![](unmodified.jpg)
+
+On to the software running on the ESP8266...
+
+The source code can be found at https://github.com/xconverge/gaggia-pid
+
+The features implemented in under 500 lines are:
+
+- Connects to wifi to allow for interfacing with the device (instead of having a screen or additional buttons)
+- RESTful API for getting stats, setting the desired temperature, and tuning the PID parameters
+- MQTT publishing of stats (runtime, temperature, etc.)
+- EEPROM read/write for storage of PID parameters and desired temperature
+- Reading of RTD temp sensor via SPI
+- PID control of a SSR
+- PID autotuning library to get starter/baseline tuning
+- Cutoff temperature to disable PID control incase something goes wrong
+
+Now it was time to assemble and test...
