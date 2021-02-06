@@ -62,3 +62,35 @@ The features implemented in under 500 lines are:
 - Cutoff temperature to disable PID control incase something goes wrong
 
 Now it was time to assemble and test...
+
+![](heatshrink_controller.jpg)
+
+![](thermostat_1.jpg)
+
+![](thermostat_2.jpg)
+
+![](thermostat_3.jpg)
+
+![](thermostat_4.jpg)
+
+![](thermostat_5.jpg)
+
+![](hole.jpg)
+
+![](ssr_installed.jpg)
+
+![](piggyback_ac.jpg)
+
+![](integrated.jpg)
+
+![](funnel.jpg)
+
+![](finished.jpg)
+
+![](autotune.png)
+
+![](shot_then_steam.png)
+
+![](shot.png)
+
+![](homeassistant.png)
