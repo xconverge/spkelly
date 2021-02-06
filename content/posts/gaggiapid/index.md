@@ -18,7 +18,7 @@ This modification consisted of switching out a spring in the over pressure valve
 
 A few months later, there was one last change I wanted to make, stable temperature control.
 
-The Gaggia has a small boiler to heat the water up and a pump to push it through the coffee. Prior to this modification, the heater to the boiler would cycle on and off every ~4 minutes using a thermostat set to ~200 degrees F. This meant that the temperature would drop to 199, and the heater would turn on for a few seconds, causing the temp to rise on an upward curve towards 220+, and then it would slowly drop again over ~4 minutes and the cycle would repeat. This makes it difficult to pull a consistent espresso shot, so I decided to swap out the thermostat with some hardware and software to keep the temperature stable at a desired temperature.
+The Gaggia has a small boiler to heat the water up and a pump to push it through the coffee. Prior to this modification, the heater to the boiler would cycle on and off every ~4 minutes using a thermostat set to ~220 degrees F. This meant that the temperature would drop to 219, and the heater would turn on for a few seconds, causing the temp to rise on an upward curve towards 230+, and then it would slowly drop again over ~4 minutes and the cycle would repeat. This makes it difficult to pull a consistent espresso shot, so I decided to swap out the thermostat with some hardware and software to keep the temperature stable at a desired temperature. The ideal temp I wanted to brew at was also a bit lower and closer to 200. This is supposed to help with bitterness a bit.
 
 Here is what the original schematic of the Gaggia Classic looks like:
 
