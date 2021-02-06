@@ -9,25 +9,25 @@
 	<meta name="msapplication-TileColor" content="#494f5c">
 <meta itemprop="name" content="Espresso PID Temperature Control">
 <meta itemprop="description" content="During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&hellip;
-I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;).">
-<meta itemprop="datePublished" content="2021-01-10T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-01-10T00:00:00+00:00" />
-<meta itemprop="wordCount" content="587">
+I did some research and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;).">
+<meta itemprop="datePublished" content="2021-02-06T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-02-06T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1261">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta property="og:title" content="Espresso PID Temperature Control" />
 <meta property="og:description" content="During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&hellip;
-I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;)." />
+I did some research and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://spkelly.com/posts/gaggiapid/" />
-<meta property="article:published_time" content="2021-01-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-01-10T00:00:00+00:00" />
+<meta property="article:published_time" content="2021-02-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-06T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Espresso PID Temperature Control"/>
 <meta name="twitter:description" content="During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&hellip;
-I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;)."/>
+I did some research and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;)."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -63,17 +63,17 @@ I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
-				<div class="post-meta"><span>Jan 10, 2021</span></div>
+				<div class="post-meta"><span>Feb 6, 2021</span></div>
 				<h1>Espresso PID Temperature Control</h1>
 			</header>
 			<div class="content">
 				<p>During the pandemic, due to working from home, I finally was able to justify an espresso machine. Previously, I primarily made a weekend cup or two using my aeropress, and consumed most of my coffee at the office, but now my home is also my office&hellip;</p>
-<p>I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;).</p>
+<p>I did some research and settled on the Gaggia Classic. It is simple, heavy duty, and modifiable if I ever decided to make some DIY adjustments in the future (spoiler alert&hellip;hence this post&hellip;).</p>
 <p><img src="gaggiaclassic.jpg" alt=""></p>
 <p>The first adjustment I made was lowering the pressure of the pump from the factory ~14 bar to a more appropriate ~9 bar which is standard for espresso. They come configured higher to work with expensive ESE pods which I do not use/need since I have a suitable espresso grinder and prefer to grind my coffee fresh.</p>
-<p>This modification consisted of switching out a spring in the over pressure valve with a known good spring from other coffee enthusasts.</p>
+<p>This modification consisted of switching out a spring in the over pressure valve with a known good spring from other coffee enthusiasts.</p>
 <p>A few months later, there was one last change I wanted to make, stable temperature control.</p>
-<p>The Gaggia has a small boiler to heat the water up and a pump to push it through the coffee. Prior to this modification, the heater to the boiler would cycle on and off every ~4 minutes using a thermostat set to ~200 degrees F. This meant that the temperature would drop to 199, and the heater would turn on for a few seconds, causing the temp to rise on an upward curve towards 220+, and then it would slowly drop again over ~4 minutes and the cycle would repeat. This makes it difficult to pull a consistent espresso shot, so I decided to swap out the thermostat with some hardware and software to keep the temperature stable at a desired temperature.</p>
+<p>The Gaggia has a small boiler to heat the water up and a pump to push it through the coffee. Prior to this modification, the heater to the boiler would cycle on and off every ~4 minutes using a thermostat set to ~220 degrees F. This meant that the temperature would drop to 219, and the heater would turn on for a few seconds, causing the temp to rise on an upward curve towards 230+, and then it would slowly drop again over ~4 minutes and the cycle would repeat. This makes it difficult to pull a consistent espresso shot, so I decided to swap out the thermostat with some hardware and software to keep the temperature stable at a desired temperature. The ideal temp I wanted to brew at was also a bit lower and closer to 200. This is supposed to help with bitterness a bit.</p>
 <p>Here is what the original schematic of the Gaggia Classic looks like:</p>
 <p><img src="schematic.png" alt=""></p>
 <p>The goal is to replace #4 in the diagram, the brewing thermostat, with a relay, that can be controlled based in information from a thermocouple mounted to the boiler.</p>
@@ -105,6 +105,47 @@ I did some reasearch and settled on the Gaggia Classic. It is simple, heavy duty
 <li>Cutoff temperature to disable PID control incase something goes wrong</li>
 </ul>
 <p>Now it was time to assemble and test&hellip;</p>
+<p>I finished wiring up the 120v AC to 3.3v DC converter and cleaned it up a bit.</p>
+<p><img src="heatshrink_controller.jpg" alt=""></p>
+<p>Step 1 was to remove the brew thermostat that I would be replacing with the RTD temperature sensor. You can see it in the center of the frame here (black/gold).</p>
+<p><img src="thermostat_1.jpg" alt=""></p>
+<p>Thermostat removed with a wrench pretty easily.</p>
+<p><img src="thermostat_2.jpg" alt=""></p>
+<p>I thought I would be clever to be able to thread in the temperature controller&hellip;</p>
+<p><img src="thermostat_3.jpg" alt=""></p>
+<p>After literally an hour, maybe a bit more, I gave up. I could not get it to thread in no matter what I tried, and I did not want to damage the sensor since it took over a month to come from china&hellip; so I eventually tried something a little more unconventional&hellip; I drilled a hole into the side of the stainless steel so that I could thread it in from the correct axis. It threaded in instantly and made me question a lot of life choices at this point.</p>
+<p><img src="thermostat_4.jpg" alt=""></p>
+<p><img src="thermostat_5.jpg" alt=""></p>
+<p>Then I just pulled the wire in from the inside and was left with this. I might try to find a plug or something at some point to close it up, but for now it is for &ldquo;airflow&rdquo;.</p>
+<p><img src="hole.jpg" alt=""></p>
+<p>Next I used some thermal double sided adhesive to mount the SSR, and took the wires that were previously going through the thermostat, and put them on the output side of the SSR.</p>
+<p><img src="ssr_installed.jpg" alt=""></p>
+<p>I piggybacked the neutral from the back of the unit. I took the hot wire from the power switch, so that the controller was only on when the machine is also on.</p>
+<p><img src="piggyback_ac.jpg" alt=""></p>
+<p>Everything all installed, wired, connected, and in place.</p>
+<p><img src="integrated.jpg" alt=""></p>
+<p>Here is the funnel that I had to work around, it allows you to fill the reservoir from the top of the machine.</p>
+<p><img src="funnel.jpg" alt=""></p>
+<p>All finished and buttoned up! Now time to see if it works!</p>
+<p><img src="finished.jpg" alt=""></p>
+<p>I wrote a basic python script to plot the realtime sensor data so that I could do some initial analysis.</p>
+<p>The starting PID parameters I had programmed in actually seemed OK and the machine got to temp and stabilized. I then used CURL to enable autotuning.</p>
+<pre><code>curl -X POST xxx.xxx.xxx.xxx/autotunestart
+</code></pre><p>Here is the realtime data from the autotune, it does a few disturbances and then does some math to spit out some ok parameters.</p>
+<p><img src="autotune.png" alt=""></p>
+<p>I then applied the parameters output from the autotune.</p>
+<pre><code>curl -d &quot;kp=68.02&amp;ki=1.63&amp;kd=710.95&quot; -X POST xxx.xxx.xxx.xxx/set
+</code></pre><p>Saved these new values to EEPROM:</p>
+<pre><code>curl -X POST xxx.xxx.xxx.xxx/save
+</code></pre><p>And then was ready to pull a shot and see how things went!</p>
+<p>In this graph, X is seconds and Y is temp in F. I let the machine come up to temp, then I brewed the shot (slight dip in temp as new water was introduced to the boiler), then I enabled the steam switch which bypasses this PID control and uses a 2nd thermostat (the large spike to generate steam), and then finally turned the steam switch off and the temp started dropping.</p>
+<p><img src="shot_then_steam.png" alt=""></p>
+<p>Here is a closeup of the drop during brewing the shot. the drop is not bad at all and recovers quite quickly!
+<img src="shot.png" alt=""></p>
+<p>I was surprised at how much better and less bitter the shot actually tasted. Brewing at closer to 200 vs the previous ~220 is a huge difference.</p>
+<p>I made a sensor to listen to the status data in home assistant and now can see this sort of thing anytime I want. For now I think I will just leave it all as is, not touch it, and treat it the same way as I did before, as a simple machine (albeit with much better tasting results)</p>
+<p><img src="homeassistant.png" alt=""></p>
+<p>Overall I am very happy with how things turned out. The code was simple enough and worked the first try with only a minor bug in my autotuning code. Integration went well and the end product is clean, more functional, and non obtrusive. Time for me to go have another coffee&hellip;</p>
 
 			</div>
 			<hr class="post-end">
