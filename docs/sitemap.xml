@@ -1,119 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://spkelly.com/posts/gaggiapid/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/homeassistant/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/goes/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/bread/</loc>
     <lastmod>2020-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/sstvfromiss/</loc>
     <lastmod>2019-12-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/websiteupdate/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/rtlsdr/</loc>
     <lastmod>2019-06-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/batteryreconditioning/</loc>
     <lastmod>2017-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/vscodevim/</loc>
     <lastmod>2017-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/smokercontroller/</loc>
     <lastmod>2016-12-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/drawingrobot/</loc>
     <lastmod>2013-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/deltarobot/</loc>
     <lastmod>2013-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/3dprinter/</loc>
     <lastmod>2013-07-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/mobileeyes/</loc>
     <lastmod>2013-07-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/wordclock/</loc>
     <lastmod>2013-03-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/kegerator/</loc>
     <lastmod>2011-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/aml/</loc>
     <lastmod>2011-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/argus/</loc>
     <lastmod>2010-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/projector/</loc>
     <lastmod>2009-05-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/posts/snowmaker/</loc>
     <lastmod>2008-05-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://spkelly.com/tags/</loc>
   </url>
-  
 </urlset>
