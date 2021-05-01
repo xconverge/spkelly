@@ -188,39 +188,33 @@ I started running Home Assistant on my server in a docker container. This allows
 <p>A few SMA and type-N connectors to piece it all together (~$10)</p>
 <p>Next up, I had to align the dish. I used <a href="https://www.dishpointer.com/">dishpointer</a> to get the azimuth, elevation, and skew from my current location. I then used a compass and bubble level app on my phone to set the dish up pointing in the general direction of where dishpointer told me. I knew I would refine this later as I found signal</p>
 <p>My bike repair stand makes for a GREAT adjustable dish stand&hellip;</p>
-<figure>
-    <img src="dish_aligned.jpg"
-         alt="Aligned dish"/> <figcaption>
+<figure><img src="dish_aligned.jpg"
+         alt="Aligned dish"/><figcaption>
             <p>Aligned dish</p>
         </figcaption>
 </figure>
 
 <p>The antenna I bought was a 2.4GHz antenna intended for extending WiFi coverage. Since the signal from GOES-17 is 1.6941 GHz, there is a common modification that people have been doing to tune the antenna closer to this frequency. The modification is either to flip the reflector around, or install a small spacer between the reflector and the feed. I opted for a ~2.5cm spacer. This is a bit of a hack since the dipoles in the feed are still tuned for 2.4GHz, but it is enough to work.</p>
-<figure>
-    <img src="dish_spacer.jpg"
-         alt="Spacer installed to tune antenna closer to 1.7GHz (from 2.4GHz)"/> <figcaption>
+<figure><img src="dish_spacer.jpg"
+         alt="Spacer installed to tune antenna closer to 1.7GHz (from 2.4GHz)"/><figcaption>
             <p>Spacer installed to tune antenna closer to 1.7GHz (from 2.4GHz)</p>
         </figcaption>
 </figure>
 
 <p>Then I connected up my low noise amplifier/filter combo from Nooelec, and connected it to my SDR. The LNA would be powered by the SDR which has a built in bias-t circuit to supply DC voltage.</p>
-<figure>
-    <img src="dish_connections.jpg"/> 
+<figure><img src="dish_connections.jpg"/>
 </figure>
 
 <p>After a bit of toying around (a lot a bit to be honest&hellip; different spacer lengths, reflector layouts, antenna orientations, etc..)&hellip; I found the signal and it was coming in pretty clearly!</p>
-<figure>
-    <img src="waterfall.png"/> 
+<figure><img src="waterfall.png"/>
 </figure>
 
 <p>I then switched to Ubuntu and built/setup <a href="https://github.com/pietern/goestools">goestools</a>. Goestools is a set of tools used to receive and decode the signal from the GOES satellite. Once I configured goestools to enable the bias-t on my sdr to provide power to the LNA, I fired it up and started adjusted the antenna slightly to try and minimize the viterbi error and minimize packet drops.</p>
-<figure>
-    <img src="goesrecv.png"/> 
+<figure><img src="goesrecv.png"/>
 </figure>
 
 <p>Once this was done, I then started up goesproc and it started processing data and saving images!</p>
-<figure>
-    <img src="goesproc.png"/> 
+<figure><img src="goesproc.png"/>
 </figure>
 
 <p>Here is the first thing that came in!</p>
@@ -271,63 +265,53 @@ I started running Home Assistant on my server in a docker container. This allows
   
   alt="First image!"></a></p>
 <p>Since this satellite is geostationary&hellip;I was done! I left it running for ~24 hours and stitched together the images using <a href="https://github.com/ImageMagick/ImageMagick/">ImageMagick</a> to make some nice gifs.</p>
-<figure>
-    <img src="goes17_fd_fc.gif"
-         alt="GOES-17"/> <figcaption>
+<figure><img src="goes17_fd_fc.gif"
+         alt="GOES-17"/><figcaption>
             <p>GOES-17</p>
         </figcaption>
 </figure>
 
 <p>GOES satellites have a few imagers and some can be requested by government agencies to point at specific things for certain reasons, these 2 gifs/sets of images are 2 additional images that get produced.</p>
-<figure>
-    <img src="goes17_m1_fc.gif"
-         alt="GOES-17 M1, changed where it was pointing part of the way through"/> <figcaption>
+<figure><img src="goes17_m1_fc.gif"
+         alt="GOES-17 M1, changed where it was pointing part of the way through"/><figcaption>
             <p>GOES-17 M1, changed where it was pointing part of the way through</p>
         </figcaption>
 </figure>
 
-<figure>
-    <img src="goes17_m2_fc.gif"
-         alt="GOES-17 M2"/> <figcaption>
+<figure><img src="goes17_m2_fc.gif"
+         alt="GOES-17 M2"/><figcaption>
             <p>GOES-17 M2</p>
         </figcaption>
 </figure>
 
 <p>You can read about what it is pointed at and why here at the <a href="https://www.ospo.noaa.gov/Operations/messages.html">NOAA message list</a>.</p>
 <p>The GOES satellites also have a relay system where they relay smaller images from a few other similar satellites.</p>
-<figure>
-    <img src="goes16_fd_ch13enhanced.gif"
-         alt="NOAA GOES-16"/> <figcaption>
+<figure><img src="goes16_fd_ch13enhanced.gif"
+         alt="NOAA GOES-16"/><figcaption>
             <p>NOAA GOES-16</p>
         </figcaption>
 </figure>
 
-<figure>
-    <img src="himawari8_fd_ir.gif"
-         alt="Japanese Himawari-8"/> <figcaption>
+<figure><img src="himawari8_fd_ir.gif"
+         alt="Japanese Himawari-8"/><figcaption>
             <p>Japanese Himawari-8</p>
         </figcaption>
 </figure>
 
 <p>I also received some National Weather Service data from the satellite&hellip;</p>
-<p><figure>
-    <img src="weather1.gif"/> 
+<p><figure><img src="weather1.gif"/>
 </figure>
 <br>
-<figure>
-    <img src="weather2.gif"/> 
+<figure><img src="weather2.gif"/>
 </figure>
 <br>
-<figure>
-    <img src="weather3.gif"/> 
+<figure><img src="weather3.gif"/>
 </figure>
 <br>
-<figure>
-    <img src="weather4.gif"/> 
+<figure><img src="weather4.gif"/>
 </figure>
 <br>
-<figure>
-    <img src="weather5.gif"/> 
+<figure><img src="weather5.gif"/>
 </figure>
 </p>
 <p>Reading more about this specific satellite (GOES-17), it has definitely had some problems. Most notable was <a href="https://www.goes-r.gov/users/GOES-17-ABI-Performance.html">GOES-17 ABI cooling failure</a> which lead to them running reduced hours at different parts of the year to prevent the images from being over-saturated due to overheating.</p>
@@ -367,9 +351,8 @@ I first started making bread many years ago using the no knead method. It was ea
 <p><img src="ciabatta2.jpg" alt=""></p>
 <p><img src="challah.jpg" alt=""></p>
 <p><img src="baguettes.jpg" alt=""></p>
-<figure>
-    <img src="baguettes2.jpg"
-         alt="Ran out of oven width&amp;hellip;. panic ensued&amp;hellip; hockey stick bread resulted&amp;hellip;"/> <figcaption>
+<figure><img src="baguettes2.jpg"
+         alt="Ran out of oven width&amp;hellip;. panic ensued&amp;hellip; hockey stick bread resulted&amp;hellip;"/><figcaption>
             <p>Ran out of oven width&hellip;. panic ensued&hellip; hockey stick bread resulted&hellip;</p>
         </figcaption>
 </figure>
@@ -380,9 +363,8 @@ I first started making bread many years ago using the no knead method. It was ea
 <p>Here is some layered croissant dough. Every line is a layer of butter in between folds of dough that once baked will turn into the flakey, deliciousness.</p>
 <p><img src="croissantdough.jpg" alt=""></p>
 <p><img src="croissants.jpg" alt=""></p>
-<figure>
-    <img src="foccacia.jpg"
-         alt="A rosemary, potato foccacia"/> <figcaption>
+<figure><img src="foccacia.jpg"
+         alt="A rosemary, potato foccacia"/><figcaption>
             <p>A rosemary, potato foccacia</p>
         </figcaption>
 </figure>
@@ -493,7 +475,7 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 <p>:( from <a href="https://en.wikipedia.org/wiki/Meteor_(satellite)#Meteor-M">wikipedia</a>:
 &ldquo;On 5 July 2019, the replacement satellite for the failed Meteor-M No.2-1 satellite, the Meteor-M No.2-2 (also known as Meteor M2-2) was launched from Vostochny cosmodrome.</p>
 <p>On 18 December 2019, image downlink from Meteor-M No.2-2 ceased. Tracking revealed the craft had suffered degradation in orbit with a 2 km (1.2 mi) decrease in perigee. NORAD was not able to identify any space object involved in a collision. Roscosmos later confirmed that the satellite had suffered a decompression of its thermal control system following what is presumed to be a micrometeoroid impact. Following the incident, the spacecraft was automatically switched into a low-power mode and ground operators worked to restore the satellite&rsquo;s orbit and orientation. By 25 December 2019, the satellite had resumed controlled flight, but the future of its mission remains uncertain.</p>
-<p>Other Meteor-M satellites have been planned but their realization is uncertain.&rdquo; <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Other Meteor-M satellites have been planned but their realization is uncertain.&rdquo;&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
