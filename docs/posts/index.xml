@@ -6,8 +6,34 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
 		<atom:link href="https://spkelly.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Deadbolt Sensor</title>
+			<link>https://spkelly.com/posts/deadboltsensor/</link>
+			<pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+			
+			<guid>https://spkelly.com/posts/deadboltsensor/</guid>
+			<description>I added a Zigbee mesh network to my home automation setup using a Conbee II usb adapter. https://phoscon.de/en/conbee2
+This allows me to add low powered sensors and switches to control lights and other things. I primarily got it because the light switch for the backyard lights is OUTSIDE. So when the raccoons come, the only way to turn on the lights would be to go outside WITH the raccoons to turn on the lights.</description>
+			<content type="html"><![CDATA[<p>I added a <a href="https://en.wikipedia.org/wiki/Zigbee">Zigbee</a> mesh network to my home automation setup using a Conbee II usb adapter. <a href="https://phoscon.de/en/conbee2">https://phoscon.de/en/conbee2</a></p>
+<p><img src="conbee2.jpg" alt=""></p>
+<p>This allows me to add low powered sensors and switches to control lights and other things. I primarily got it because the light switch for the backyard lights is OUTSIDE. So when the raccoons come, the only way to turn on the lights would be to go outside WITH the raccoons to turn on the lights. I put a smart light switch there, and then a small zigbee button by the back door that triggers the light to turn on and off through an automation in home assistant.</p>
+<p>Now that I had this network, I wanted to have the ability to know whether or not the doors are locked/unlocked. I tried a smart lock first, but it was deemed &ldquo;too ugly&rdquo; and large.</p>
+<p><img src="wyze.webp" alt=""></p>
+<p>Since I didn&rsquo;t need the ability to lock/unlock, I decided to try to come up with a way to just make the dumb-deadbolt, a smart-deadbolt.</p>
+<p>Here is the finished product using a cheap reed switch wireless door sensor. I opened it up, removed the reed switch, and soldered 2 wires to the contact points the reed switch was bridging.</p>
+<p><img src="sensor_finished.jpg" alt=""></p>
+<p>I then ran the 2 wires to some battery springs. The mess of the door jamb was not me, that is a project for another day I suppose&hellip;</p>
+<p><img src="sensor_1.jpg" alt=""></p>
+<p>For some reason, the deadbolt was not conductive. I put a meter on it and could not get a tone, so decided to just put some HVAC aluminum tape (I don&rsquo;t have any copper tape laying around).</p>
+<p><img src="sensor_2.jpg" alt=""></p>
+<p>When the deadbolt closes, it touches and bridges the 2 springs inside, and then transmits its state change to the conbee II and zigbee network, which get relayed to home assistant and then report the state of the lock on a nice dashboard.</p>
+<p><img src="sensor_3.png" alt=""></p>
+<p>I plan on setting up an automation to detect if the doors are unlocked after a certain time, to send a notification to my phone.</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Espresso PID Temperature Control</title>
