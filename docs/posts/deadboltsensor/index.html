@@ -11,7 +11,7 @@
 <meta itemprop="description" content="I added a Zigbee mesh network to my home automation setup using a Conbee II usb adapter. https://phoscon.de/en/conbee2
 This allows me to add low powered sensors and switches to control lights and other things. I primarily got it because the light switch for the backyard lights is OUTSIDE. So when the raccoons come, the only way to turn on the lights would be to go outside WITH the raccoons to turn on the lights."><meta itemprop="datePublished" content="2021-05-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-05-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="333">
+<meta itemprop="wordCount" content="408">
 <meta itemprop="keywords" content="" /><meta property="og:title" content="Deadbolt Sensor" />
 <meta property="og:description" content="I added a Zigbee mesh network to my home automation setup using a Conbee II usb adapter. https://phoscon.de/en/conbee2
 This allows me to add low powered sensors and switches to control lights and other things. I primarily got it because the light switch for the backyard lights is OUTSIDE. So when the raccoons come, the only way to turn on the lights would be to go outside WITH the raccoons to turn on the lights." />
@@ -77,7 +77,11 @@ This allows me to add low powered sensors and switches to control lights and oth
 <p><img src="sensor_2.jpg" alt=""></p>
 <p>When the deadbolt closes, it touches and bridges the 2 springs inside, and then transmits its state change to the conbee II and zigbee network, which get relayed to home assistant and then report the state of the lock on a nice dashboard.</p>
 <p><img src="sensor_3.png" alt=""></p>
-<p>I plan on setting up an automation to detect if the doors are unlocked after a certain time, to send a notification to my phone.</p>
+<p>For the other door I had more room to work with and was able to make a nice hole for the wires to do a cleaner install on the inside. For the sensor I used a limit switch and some foam to wedge it in place. A bit wonky but it works, and would be easy to adjust later if needed since there is much more room in this door jamb than the other door.</p>
+<p><img src="sensor2_1.jpg" alt=""></p>
+<p><img src="sensor2_2.jpg" alt=""></p>
+<p>I setup up an automation in <a href="https://nodered.org/">node-red</a>/homeassistant to detect if the doors are unlocked after a certain time, to send a notification to my phone.</p>
+<p><img src="automation.png" alt=""></p>
 
 			</div>
 			<hr class="post-end">

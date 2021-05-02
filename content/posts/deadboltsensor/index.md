@@ -34,4 +34,13 @@ When the deadbolt closes, it touches and bridges the 2 springs inside, and then 
 
 ![](sensor_3.png)
 
-I plan on setting up an automation to detect if the doors are unlocked after a certain time, to send a notification to my phone.
+For the other door I had more room to work with and was able to make a nice hole for the wires to do a cleaner install on the inside. For the sensor I used a limit switch and some foam to wedge it in place. A bit wonky but it works, and would be easy to adjust later if needed since there is much more room in this door jamb than the other door.
+
+![](sensor2_1.jpg)
+
+![](sensor2_2.jpg)
+
+
+I setup up an automation in [node-red](https://nodered.org/)/homeassistant to detect if the doors are unlocked after a certain time, to send a notification to my phone.
+
+![](automation.png)
