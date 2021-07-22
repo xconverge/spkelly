@@ -144,7 +144,7 @@ I started running Home Assistant on my server in a docker container. This allows
 <p><img src="nodemcu.jpg" alt=""></p>
 <p>I installed <a href="https://esphome.io/">https://esphome.io/</a> onto the NodeMCU, this allows you to customize and publish events (sensors changing) to be consumed by another service, in my case, Home Assistant.</p>
 <p>I then wired up my sensors from the ancient security system to the NodeMCU GPIO pins and configured them in esphome to use the internal pullup resistors. My entire esphome config looks like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">esphome</span><span class="p">:</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">esphome</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">security</span><span class="w">
 </span><span class="w">  </span><span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="l">ESP8266</span><span class="w">
 </span><span class="w">  </span><span class="nt">board</span><span class="p">:</span><span class="w"> </span><span class="l">nodemcuv2</span><span class="w">
@@ -550,7 +550,7 @@ First up, I wanted to try and capture data from a NOAA satellite as it passed ov
 <p>The final part of this project was to take all of this newfound power and synchronize usage of the devices in a way that automated the original methods for reconditioning the batteries.</p>
 <p>I created what I called the workflow controller. I wanted a way to input a formula or series of steps and press GO. I wanted steps like charge with x settings, sleep for 10 minutes, discharge with x settings, sleep for 10 minutes.</p>
 <p>I decided to use yaml and yaml-cpp for its relative ease of use. I added the yaml-cpp dependency and came up with a schema I wanted to use. A valid workflow looks something like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
 </span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
 </span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
 </span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">

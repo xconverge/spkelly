@@ -91,7 +91,7 @@
 <p>The final part of this project was to take all of this newfound power and synchronize usage of the devices in a way that automated the original methods for reconditioning the batteries.</p>
 <p>I created what I called the workflow controller. I wanted a way to input a formula or series of steps and press GO. I wanted steps like charge with x settings, sleep for 10 minutes, discharge with x settings, sleep for 10 minutes.</p>
 <p>I decided to use yaml and yaml-cpp for its relative ease of use. I added the yaml-cpp dependency and came up with a schema I wanted to use. A valid workflow looks something like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">charge</span><span class="w">
 </span><span class="w">  </span><span class="nt">voltage</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
 </span><span class="w">  </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
 </span><span class="w">  </span><span class="nt">deltav</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
