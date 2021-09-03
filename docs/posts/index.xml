@@ -110,13 +110,13 @@ I did some research and settled on the Gaggia Classic. It is simple, heavy duty,
 <p><img src="finished.jpg" alt=""></p>
 <p>I wrote a basic python script to plot the realtime sensor data so that I could do some initial analysis.</p>
 <p>The starting PID parameters I had programmed in actually seemed OK and the machine got to temp and stabilized. I then used CURL to enable autotuning.</p>
-<pre><code>curl -X POST xxx.xxx.xxx.xxx/autotunestart
+<pre tabindex="0"><code>curl -X POST xxx.xxx.xxx.xxx/autotunestart
 </code></pre><p>Here is the realtime data from the autotune, it does a few disturbances and then does some math to spit out some ok parameters.</p>
 <p><img src="autotune.png" alt=""></p>
 <p>I then applied the parameters output from the autotune.</p>
-<pre><code>curl -d &quot;kp=68.02&amp;ki=1.63&amp;kd=710.95&quot; -X POST xxx.xxx.xxx.xxx/set
+<pre tabindex="0"><code>curl -d &quot;kp=68.02&amp;ki=1.63&amp;kd=710.95&quot; -X POST xxx.xxx.xxx.xxx/set
 </code></pre><p>Saved these new values to EEPROM:</p>
-<pre><code>curl -X POST xxx.xxx.xxx.xxx/save
+<pre tabindex="0"><code>curl -X POST xxx.xxx.xxx.xxx/save
 </code></pre><p>And then was ready to pull a shot and see how things went!</p>
 <p>In this graph, X is seconds and Y is temp in F. I let the machine come up to temp, then I brewed the shot (slight dip in temp as new water was introduced to the boiler), then I enabled the steam switch which bypasses this PID control and uses a 2nd thermostat (the large spike to generate steam), and then finally turned the steam switch off and the temp started dropping.</p>
 <p><img src="shot_then_steam.png" alt=""></p>
