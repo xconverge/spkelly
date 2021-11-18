@@ -1,6 +1,6 @@
 This repository is used to build www.spkelly.com
 
-Website is built using Hugo framework https://gohugo.io/
+Website is built using Hugo framework https://gohugo.io/ and hosted with Cloudflare Pages
 
 ## Developing
 
