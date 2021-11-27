@@ -3,7 +3,7 @@ title: "Deadbolt Sensor"
 date: 2021-05-01
 draft: false
 featuredImg: ""
-tags: 
+tags:
 ---
 
 I added a [Zigbee](https://en.wikipedia.org/wiki/Zigbee) mesh network to my home automation setup using a Conbee II usb adapter. https://phoscon.de/en/conbee2
@@ -34,12 +34,19 @@ When the deadbolt closes, it touches and bridges the 2 springs inside, and then 
 
 ![](sensor_3.png)
 
+> **Edit: 11-2021**
+>
+> I have switched from the janky springs/contact sensing to using reed sensors and magnets. I was having issues with the foil tape ripping slightly along with the deadbolt needing to be FULLY FULLY locked instead of just mostly locked, both of which caused mis-readings. This means no wear and tear due to contact, no misreading, and it is reliable.
+>
+> ![](updated_1.jpg)
+>
+> ![](updated_2.jpg)
+
 For the other door I had more room to work with and was able to make a nice hole for the wires to do a cleaner install on the inside. For the sensor I used a limit switch and some foam to wedge it in place. A bit wonky but it works, and would be easy to adjust later if needed since there is much more room in this door jamb than the other door.
 
 ![](sensor2_1.jpg)
 
 ![](sensor2_2.jpg)
-
 
 I setup up an automation in [node-red](https://nodered.org/)/homeassistant to detect if the doors are unlocked after a certain time, to send a notification to my phone.
 
