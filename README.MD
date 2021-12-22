@@ -4,7 +4,7 @@ Website is built using Hugo framework https://gohugo.io/ and hosted with Cloudfl
 
 ## Developing
 
-Install hugo-extended on platform for compilation of scss files.
+Install hugo-extended (homebrew installs the extended version automatically) on platform for compilation of scss files.
 
 https://github.com/gohugoio/hugo/releases
 
@@ -22,4 +22,7 @@ and then access the test site at http://localhost:1313/
 
 ## Deployment
 
-Handled by Cloudflare Pages
+Handled automatically by Cloudflare pages anytime a commit is made to this repository/branch.
+
+## Notes
+- The maximum file size for a single Cloudflare Pages site asset is 25MB.
