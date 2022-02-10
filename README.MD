@@ -14,7 +14,7 @@ Work with changes live:
 ./start.sh
 ```
 or
-```
+```bash
 hugo server --ignoreCache --forceSyncStatic
 ```
 
@@ -26,3 +26,8 @@ Handled automatically by Cloudflare pages anytime a commit is made to this repos
 
 ## Notes
 - The maximum file size for a single Cloudflare Pages site asset is 25MB.
+
+- Can strip exif with exiftool:
+```bash
+exiftool -all= -overwrite_original -r .
+```
