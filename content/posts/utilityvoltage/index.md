@@ -60,3 +60,7 @@ The voltage logger was left on my house for 1 week. Here is "my" plot/log of wha
 Next up is waiting for PGE to analyze the data and decide if there are any next steps...
 
 ...I am not optimistic?
+
+2 weeks later... I get a phone call and he confirms that there are some pretty bad looking problems and that they are outside the range of what they are regulated to provide. There is not going to be a quick fix so he asks for some patience as he figures out what to do and if there are any short term fixes like switching a few customers on the block to the other leg, etc. He said that there is a chance that they need to rewire the block and due to the latest standards that would mean new poles and everything... my neighbors are going to hate me...
+
+...time to wait more but that is good news!
