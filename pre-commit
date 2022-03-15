@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo "Running pre-commit"
+# Get added/modified file list
+for FILE in `exec git diff --cached --name-only --diff-filter=AM` ; do
+    EXT=$(echo "${FILE##*.}" | tr "[:lower:]" "[:upper:]")
+    # Process JPG & PNG files. Can add additional filetypes below
+    if [ "$EXT" = "JPG" ] || [ "$EXT" = "PNG" ]; then
+        echo "Attempting to remove EXIF data from $FILE"
+        exiftool -all= -overwrite_original $FILE
+        git add $FILE
+    fi
+done
