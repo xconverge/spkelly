@@ -30,7 +30,7 @@ googleAnalytics = ""
   # images = [""]
   themeColor = "#494f5c"
 
-  avatarUrl = "avatar.jpg"
+  avatarUrl = "avatar.png"
   homeSubtitle = ""
   footerCopyright = ''
   # bgImg = ""  # Homepage background-image URL
