@@ -88,10 +88,6 @@ In Hugo, layouts can live in either the project’s (root) or the themes’ layo
 
 You can modify or add any svg icons in site's `layouts/partials/svg.html`.
 
-##### Customize comment system
-
-We only have built-in support for Disqus at the moment, if that doesn't fit your needs, you can just add html to site's `layouts/partials/comments.html`.
-
 #### Customize CSS
 
 If you'd like to customize theme color or fonts, you can simply override `assets/scss/_predefined.scss`, by simply copy it to site's root (keep the same relative path) then edit those variables. But keep in mind, you'll need **Hugo extended version** which has the ability to rebuild SCSS. You don't have to use extended version in production but in this case it's necessary to make sure the `resources` folder is committed and "up to date" (by running `hugo` or `hugo server` locally using the extended version). But anyway, always use the extended version if you can.
