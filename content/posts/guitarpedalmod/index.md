@@ -8,7 +8,7 @@ tags:
 
 The [Tube Screamer](https://en.wikipedia.org/wiki/Ibanez_Tube_Screamer) guitar pedal is an overdrive that has been around since the late 1970s. For a $35 TS808 Tube Screamer clone pedal, the Joyo Vintage Overdrive sounds great.
 
-I wanted to modify it since it uses through hole components and the TS808 has a ton of mod options since the circuit has been around for so long and is so straight forward. https://www.analogman.com/ts9.htm
+I wanted to modify it since it uses through hole components and the TS808 has a ton of mod options since the circuit has been around for so long and is so straight forward. https://www.electrosmash.com/tube-screamer-analysis
 
 Here is what the original schematic for the pedal looks like:
 ![](JoyoVintageOverdrive.png)
