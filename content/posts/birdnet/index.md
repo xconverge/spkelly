@@ -6,15 +6,15 @@ featuredImg: ""
 tags:
 ---
 
-There is a model that has been developed called [BirdNET](https://birdnet.cornell.edu/)
+There is an AI audio based model that has been developed called [BirdNET](https://birdnet.cornell.edu/)
 
 > BirdNET is a research platform that aims at recognizing birds by sound at scale. We support various hardware and operating systems such as Arduino microcontrollers, the Raspberry Pi, smartphones, web browsers, workstation PCs, and even cloud services. BirdNET is a citizen science platform as well as an analysis software for extremely large collections of audio. BirdNET aims to provide innovative tools for conservationists, biologists, and birders alike. -[BirdNET](https://birdnet.cornell.edu/)
 
-There is a project [BirdNET-Pi](https://github.com/mcguirepr89/BirdNET-Pi) that has created an image to run this model and various web services on a raspberry pi.
+A project [BirdNET-Pi](https://github.com/mcguirepr89/BirdNET-Pi) exists that has created an image to run this model and various web services on a raspberry pi.
 
-I have a server running already so I was hoping to run the model in something more portable, ideally a docker image. After a quick search I found [BirdCAGE](https://github.com/mmcc-xx/BirdCAGE) which repackages the components into some docker images.
+I already have a server running so I was hoping to run the model in something more portable, ideally a docker image. After a quick search I found [BirdCAGE](https://github.com/mmcc-xx/BirdCAGE) which repackages the components into a set of docker images.
 
-My docker-compose.yaml:
+My docker-compose.yml:
 
 ```yaml
 services:
