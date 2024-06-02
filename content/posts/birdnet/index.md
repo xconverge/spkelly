@@ -140,3 +140,5 @@ Here are the details shown per detection (along with a 6 second recording)
 ![](detection_details.png)
 
 ![](kestrel_spectrum.png)
+
+{{<audio src="/audio/birdnet_kestrel.mp3" >}}
