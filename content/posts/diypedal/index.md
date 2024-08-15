@@ -37,7 +37,7 @@ Here is the final 3D view of the PCB from KiCad.
 
 ![](final_2.png)
 
-Now that the design was done, it was time to get it manufactured. I checked https://jlcpcb.com/ and https://oshpark.com/ and went with jlcpcb. I exported my project's files from KiCad, uploaded them to jlcpcb, and was brought to the order page for a grand total of....
+Now that the design was done, it was time to get it manufactured. I checked https://jlcpcb.com/ and https://oshpark.com/ and went with JLCPCB. I exported my project files from KiCad, uploaded them to JLCPCB, and was brought to the order page for a grand total of....
 
 ![](order_1.png)
 
