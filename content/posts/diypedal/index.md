@@ -26,6 +26,10 @@ I did some quick googling and came to the conclusion that https://www.kicad.org/
 
 I didn't want to do too much design/engineering of the actual circuit at this point because PCB manufacturing was the main goal of this project. I mostly just used the schematic directly from [PedalPCB's](https://www.pedalpcb.com/product/pcb038/) version of a RAT.
 
+Here is the schematic I ended up with in KiCad.
+
+![](schematic.png)
+
 Here is an early screenshot I took of my learning progress before redoing all of the layout and traces.
 ![](1.jpg)
 
