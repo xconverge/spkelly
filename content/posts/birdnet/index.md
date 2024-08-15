@@ -142,3 +142,7 @@ Here are the details shown per detection (along with a 6 second recording)
 ![](kestrel_spectrum.png)
 
 {{<audio src="/audio/birdnet_kestrel.mp3" >}}
+
+Soon after writing this initial post, I switched to https://github.com/tphakala/birdnet-go and it is a REALLY clean, single binary, nice looking tool for running the same birdNET models!
+
+![](birdnetgo.png)
