@@ -1,14 +1,24 @@
 ---
-title: "Custom PCB Guitar Pedal"
+title: "Guitar Pedal with Custom PCB"
 date: 2024-08-14
 draft: false
 featuredImg: ""
 tags:
 ---
 
-Even though I have an electrical engineering degree, I realized I have never actually DONE board layout or had a PCB manufactured. I figured a simple clone of a known guitar pedal circuit would be a great place to start!
+Even though I have an electrical engineering degree, I have never actually designed a PCB layout or had a PCB manufactured. I figured a simple clone of a known guitar pedal circuit would be a great place to start!
 
 I had previously built a pedal with a purchased PCB (~$12) and was curious to see if I could make a PCB for cheaper than that or at least in the same ballpark...
+
+Here are a few pictures of that pedal and process:
+
+![](beod_3.jpg)
+
+![](beod_1.jpg)
+
+![](beod_2.jpg)
+
+That pedal was a clone of the Friedman BE-OD and the PCB was from [aionfx](https://aionfx.com/project/tempest-amp-distortion/). It sounds great and I use it everyday!
 
 The [Pro Co RAT](https://en.wikipedia.org/wiki/Pro_Co_RAT) is a classic guitar distortion pedal that has been around since the late 1970s.
 
@@ -37,7 +47,7 @@ Less than $5 for 5 boards shipped from China...wow. I am not sure what I expecte
 
 ![](order_2.png)
 
-Now to wait for them to arrive...
+I then had to wait a few weeks for the boards to arrive. In the meantime I placed an order for all of the electronic components, the enclosure, and the knobs, so that once the boards arrived I could start to put it all together!
 
 Reference:
 https://www.electrosmash.com/proco-rat
