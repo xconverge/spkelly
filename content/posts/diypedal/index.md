@@ -81,5 +81,9 @@ It's alive! The only adjustment I had to make was I had soldered to the wrong pi
 
 ![](working.jpg)
 
+Labeled and ready to go!
+
+![](labeled.jpg)
+
 Reference:
 https://www.electrosmash.com/proco-rat
