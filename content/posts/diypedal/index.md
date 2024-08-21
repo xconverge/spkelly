@@ -53,5 +53,33 @@ Less than $5 for 5 boards shipped from China...wow. I am not sure what I expecte
 
 I then had to wait a few weeks for the boards to arrive. In the meantime I placed an order for all of the electronic components, the enclosure, and the knobs, so that once the boards arrived I could start to put it all together!
 
+When the components arrived, I drilled and started on the enclosure. Since I designed the PCB potentiometer spacing and had the measurements, I was pretty confident things would fit... It is also easiest to solder the populated/finished PCB onto the potentiometers in the enclosure instead of soldering the potentiometers to the board and THEN trying to fit it all into the holes of the enclosure.
+
+![](enclosure_1.jpg)
+
+I sanded the raw aluminum to ~320 grit, didn't go too crazy...
+
+![](enclosure_2.jpg)
+
+My PCBs arrived!
+
+![](pcbs.jpg)
+
+Test fit...and it all fit perfectly!
+
+![](testfit.jpg)
+
+I then populated all of the components. I didn't need to populate C6 because I am using the OP07 instead of a LM308 for the main IC. I also changed the LED resistor from 4.7k to 10k because I know I hate bright LEDs.
+
+![](progress.jpg)
+
+It all fits, kind of a pain to wire up but hopefully it just works and I don't need to pull it out...
+
+![](populated.jpg)
+
+It's alive! The only adjustment I had to make was I had soldered to the wrong pins for the tip part of the 1/4" jacks for input and output.
+
+![](working.jpg)
+
 Reference:
 https://www.electrosmash.com/proco-rat
