@@ -16,7 +16,6 @@ https://www.amazon.com/gp/product/B07C238GTP
 
 https://github.com/adnidor/vc820py
 
-
 I then added an ability to report the readings to CSV or MQTT and hooked it up to a raspberry pi for deployment/long term use.
 
 Source code for the dmm logger is here https://github.com/xconverge/dmm-plot
@@ -39,7 +38,7 @@ Here are a few plots of some pretty large voltage sag events over a few weeks/mo
 
 ![](sag_4.png)
 
-I sent these plots to a random email I found for the "voltage reliability team" at PGE and within a few days I got a phone call! This was a pretty big surprise but the person I talked to was quite eager to figure this out. He said they are regulated to +/- 5% which for 120V is 114V. A few days later, a bucket truck showed up and installed a voltage logger onto the supply to my house. 
+I sent these plots to a random email I found for the "voltage reliability team" at PGE and within a few days I got a phone call! This was a pretty big surprise but the person I talked to was quite eager to figure this out. He said they are regulated to +/- 5% which for 120V is 114V. A few days later, a bucket truck showed up and installed a voltage logger onto the supply to my house.
 
 ![](bucket_1.jpg)
 
@@ -64,3 +63,35 @@ Next up is waiting for PGE to analyze the data and decide if there are any next 
 2 weeks later... I get a phone call and he confirms that there are some pretty bad looking problems and that they are outside the range of what they are regulated to provide. There is not going to be a quick fix so he asks for some patience as he figures out what to do and if there are any short term fixes like switching a few customers on the block to the other leg, etc. He said that there is a chance that they need to rewire the block and due to the latest standards that would mean new poles and everything... my neighbors are going to hate me...
 
 ...time to wait more but that is good news!
+
+### Update on 2024-09-02
+
+We had 2 planned power outages for maintenance last month.
+
+First they replaced a few poles on the street and moved over all of the communication wires:
+
+![](new_pole.jpg)
+
+Old transformer with new pole installed alongside:
+
+![](old_transformer.jpg)
+
+New transformer to be installed:
+
+![](new_transformer_1.jpg)
+
+And installed (100kva instead of 50kva)
+
+![](new_transformer_2.jpg)
+
+Then they ran new secondary wires along the entire street and to every house!
+
+![](new_secondary_wire.jpg)
+
+So far the results seem promising with much more stable voltages closer to 120v, with no real dips below 118v.
+
+Before (random day with same time period):
+![](old.png)
+
+After:
+![](new.png)
