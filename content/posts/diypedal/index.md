@@ -1,5 +1,5 @@
 ---
-title: "Guitar Pedal with Custom PCB"
+title: "Guitar Pedal Custom PCB"
 date: 2024-08-14
 draft: false
 featuredImg: ""
