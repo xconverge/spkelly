@@ -87,3 +87,19 @@ Labeled and ready to go!
 
 Reference:
 https://www.electrosmash.com/proco-rat
+
+#### Edit: December 2024
+
+I made another PCB for a blend circuit to combine a rectifier type pedal and a marshall type pedal in a single pedal. The rectifier circuit inverts the phase so the blend circuit also includes a phase inversion so that both pedals are in-phase.
+
+Here is the schematic for the blend and phase inversion PCB:
+![](combo_1.png)
+
+The rendering from KiCad before getting it built by JLCPCB...($4.50 for 5 boards!)
+![](combo_2.png)
+
+Tight fit once the boards arrived!
+![](combo_3.jpg)
+
+Success!
+![](combo_4.jpg)
