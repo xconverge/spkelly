@@ -10,6 +10,12 @@ https://mojotone.com/products/mojotone-studio-one-1-watt-2-channel-guitar-tube-a
 
 ![](schematic.png)
 
+![](wiring.png)
+
+![](MOJO779.jpg)
+
+![](MOJO1580.jpg)
+
 ![](amp_1.jpg)
 
 ![](amp_2.jpg)
