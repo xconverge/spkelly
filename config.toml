@@ -1,5 +1,5 @@
 baseURL = "/"
-languageCode = "en-us"
+locale = "en-us"
 defaultContentLanguage = "en"
 title = "Sean Kelly"
 theme = "hermit"
