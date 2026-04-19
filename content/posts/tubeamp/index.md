@@ -20,6 +20,18 @@ https://www.youtube.com/@UncleDoug/videos
 
 ![](schematic.png)
 
+The changes I made to the schematic/wiring were:
+
+- Added a 1M pulldown resistor at the output of the clean channel before it goes into the relay to avoid footswitch pops when changing channels
+- FX loop
+  - IN/OUT inserted between the relay out and the 22nF capacitor with shielded wires
+  - Power supplied by XB at the filter capacitor with an inline 4.7k resistor
+- Ground the input to the dirty channel when the clean channel is active to prevent any crosstalk/distortion in the background
+  - Separate shielded wire, with a 68k grid stop resistor, from input jack to input of grid (V1A) for clean channel
+  - Separate shielded wire from input jack to unused common of 2nd pole on the relay switch board
+  - Shielded wire from 2nd pole on the relay switch board when dirty channel is active, to the input of grid (V2A) with an inline 68k grid stop resistor
+  - Ground wire from 2nd pole on the relay switch board to ground (on master volume pot) when clean channel is active
+
 ![](wiring.png)
 
 Transformer specifications:
@@ -28,7 +40,13 @@ Transformer specifications:
 
 ![](MOJO1580.jpg)
 
-Time to start assembly of the turret board.
+Time to start assembly of the turret board. First I used an oscilloscope and my fingers to identify which lead was for the outer foil for each capacitor. 
+
+https://www.nutsvolts.com/magazine/article/finding-the-outside-foil-lead
+
+My oscilloscope wasn't quite sensitive enough, so I actually amplified the signal a bit with a J113 JFET and that worked perfectly, very easy to determine which lead was the outer foil when I pinched the body of the capacitor with my fingers.
+
+Even though they are non-polarized capacitors, you can orient them in a specific way to reduce noise even further.
 
 ![](amp_1.jpg)
 
