@@ -24,7 +24,11 @@ I wanted to add a headphone amplifier, I was going to make a board based on the 
 
 ![](9.jpg)
 
-This LM4881 based one sounds great and fits so I didn't see the need to make my own PCB. The headphone amp is perfect for my usage, sounds great and even though the daisyseed can get pretty loud, it still isn't the same as some proper/maybe non-advisable volume into the ears.
+Here is the board I designed but ended up not using.
+
+![](tda2822.png)
+
+[This LM4881](https://www.amazon.com/dp/B08FCH2C1X) based one sounds great and fits so I didn't see the need to make my own PCB. The headphone amp is perfect for my usage, sounds great and even though the daisyseed can get pretty loud, it still isn't the same as some proper/maybe non-advisable volume into the ears.
 
 ![](4.jpg)
 
@@ -39,7 +43,7 @@ The stereo spread is basically always on, I like it a lot.
 
 ![](6.jpg)
 
- I added a switch to leave the fan off because I don't think I really need it/the buzzing of the fan since I have a 1W amp. This load will work with up to a 50W amp.
+I added a switch to leave the fan off because I don't think I really need it/the buzzing of the fan since I have a 1W amp. This load will work with up to a 50W amp.
 
 ![](7.jpg)
 
