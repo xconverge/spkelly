@@ -7,7 +7,7 @@ tags:
 ---
 
 {{< gallery
-    match="images/*"
+    match="*"
     sortOrder="asc"
     rowHeight="150"
     margins="5"
