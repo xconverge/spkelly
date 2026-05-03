@@ -1,5 +1,5 @@
 ---
-title: "Simple bin based storage unit"
+title: "Simple Bin Based Storage Unit"
 date: 2026-05-01
 draft: false
 featuredImg: ""
