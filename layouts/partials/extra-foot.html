@@ -1,0 +1,22 @@
+<script>
+  (function() {
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        mutation.addedNodes.forEach(function(node) {
+          if (node.id === 'swipebox-overlay') {
+            var slider = document.getElementById('swipebox-slider');
+            if (slider) {
+              slider.addEventListener('click', function() {
+                var $ = window.HSCGjQuery || window.jQuery;
+                if ($) $.swipebox.close();
+              });
+            }
+          }
+        });
+      });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      observer.observe(document.body, { childList: true });
+    });
+  })();
+</script>
