@@ -1,5 +1,5 @@
 ---
-title: "Amplifier reactive load for headphone usage"
+title: "Amplifier Reactive Load for Headphone Usage"
 date: 2026-04-16
 draft: false
 featuredImg: ""
