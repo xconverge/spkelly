@@ -23,6 +23,7 @@ https://www.youtube.com/@UncleDoug/videos
 The changes I made to the schematic/wiring were:
 
 - Added a 1M pulldown resistor at the output of the clean channel before it goes into the relay to avoid footswitch pops when changing channels
+- Added a DPDT ON-OFF-ON toggle switch with a 100pF/None/500pF options for the brightness capacitor on the clean channel
 - FX loop
   - IN/OUT inserted between the relay out and the 22nF capacitor with shielded wires
   - Power supplied by XB at the filter capacitor with an inline 4.7k resistor
