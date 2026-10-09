@@ -130,4 +130,6 @@ Time to make a speaker cabinet next, I wanted a single 12" Celestion V30 speaker
 
 ![](complete_2.jpg)
 
+![](final.jpg)
+
 Overall this was a very fulfilling project, I learned a lot and it sounds great!
